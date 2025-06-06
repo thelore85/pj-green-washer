@@ -7,6 +7,7 @@ import SidebarCards from '@/components/navigation/SidebarCards'
 import { useEffect } from 'react'
 import { useStore } from './store/appStore'
 import { SCRAPER_CARDS_DB } from '@/lib/utils'
+import Loader from './components/common/Loader'
 
 export default function App() {
   const initDataApp = useStore((store) => store.initDataApp)
@@ -16,26 +17,34 @@ export default function App() {
   useEffect(() => {
     const appInitialization = () => {
       if (!init) {
-        initDataApp({ scrapers: scrapersData })
+        setTimeout(() => {
+          initDataApp({ scrapers: scrapersData })
+        }, 3000)
       }
     }
     appInitialization()
   }, [init, initDataApp, scrapersData])
 
-  return (
-    <>
-      <main className="flex h-screen">
-        <SidebarCards />
-        <div className="flex flex-1 flex-col">
-          <NavMain />
-          <ScraperCard />
-          <BackupCard />
-          <FooterApp />
-        </div>
-      </main>
+  if (!init) {
+    return <Loader />
+  }
 
-      {/* // Modals and Pop-Up used in the App  */}
-      <ScraperForm />
-    </>
-  )
+  if (init) {
+    return (
+      <>
+        <main className="flex h-screen">
+          <SidebarCards />
+          <div className="flex flex-1 flex-col">
+            <NavMain />
+            <ScraperCard />
+            <BackupCard />
+            <FooterApp />
+          </div>
+        </main>
+
+        {/* // Modals and Pop-Up used in the App  */}
+        <ScraperForm />
+      </>
+    )
+  }
 }
