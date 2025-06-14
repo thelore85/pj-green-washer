@@ -1,8 +1,8 @@
 import LogoMain from './LogoMain'
-import Button from '../ui/Buttons'
-import SearchInput from '../common/SearchInput'
-import ButtonSetting from '../common/ButtonSetting'
-import ScraperList from '../common/ScraperList'
+import Button from '../cta/Buttons'
+import SearchInput from '../form/SearchInput'
+import ButtonSetting from '../cta/ButtonSetting'
+import ScraperList from '../cards/ScraperList'
 import { useStore } from '@/store/appStore'
 
 export default function SidebarCards() {

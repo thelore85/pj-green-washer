@@ -1,6 +1,6 @@
 import { useStore } from '@/store/appStore'
-import BodyCanvas from '../layouts/BodyCanvas'
-import Button from '../ui/Buttons'
+import BodyCanvas from '../../layouts/sidebar/BodyCanvas'
+import Button from '../cta/Buttons'
 import { CheckCircle } from 'lucide-react'
 
 export default function BackupCard() {

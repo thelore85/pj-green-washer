@@ -1,8 +1,8 @@
 import { Pen } from 'lucide-react'
-import Button from '../ui/Buttons'
+import Button from '../cta/Buttons'
 import { useEffect, useState } from 'react'
 import type { TScraperCard } from '@/types/compTypes'
-import BodyCanvas from '../layouts/BodyCanvas'
+import BodyCanvas from '../../layouts/sidebar/BodyCanvas'
 import { useStore } from '@/store/appStore'
 
 export default function ScraperCard() {

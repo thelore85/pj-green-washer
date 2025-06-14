@@ -7,7 +7,12 @@ type ScraperPreviewProps = {
   running?: boolean
 }
 
-export default function ScraperPreview({ title, description, running, id }: ScraperPreviewProps) {
+export default function ScraperPreviewCard({
+  title,
+  description,
+  running,
+  id,
+}: ScraperPreviewProps) {
   const cardSelected = useStore((state) => state.cardSelected)
   const selectCard = useStore((state) => state.selectCard)
 

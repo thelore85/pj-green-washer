@@ -1,5 +1,5 @@
 import { useStore } from '@/store/appStore'
-import ScraperPreview from './ScraperPreview'
+import ScraperPreview from './ScraperPreviewCard'
 
 export default function ScraperList() {
   const scrapers = useStore((store) => store.scrapers)
