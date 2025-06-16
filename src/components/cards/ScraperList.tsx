@@ -7,7 +7,13 @@ export default function ScraperList() {
 
   const scrapersFiltered = scrapers.filter((card) => {
     const title = card.title.toLocaleLowerCase()
-    return title.includes(searchQuery)
+    const description = card.description.toLocaleLowerCase()
+
+    const isCardInList = title.includes(searchQuery) || description.includes(searchQuery)
+
+    if (isCardInList) {
+      return card
+    }
   })
 
   return (
