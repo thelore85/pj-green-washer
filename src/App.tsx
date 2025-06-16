@@ -3,31 +3,14 @@ import ScraperCard from '@/components/cards/ScraperCard'
 import ScraperForm from '@/components/form/ScraperForm'
 import FooterApp from '@/components/navigation/FooterApp'
 import NavMain from '@/components/navigation/NavMain'
-import { useEffect } from 'react'
-import { useStore } from './store/appStore'
-import { SCRAPER_CARDS_DB } from '@/lib/utils'
-import Loader from './components/common/Loader'
-import SidebarLayout from './layouts/dashboard/SidebarLayout'
+import Loader from '@/components/common/Loader'
+import SidebarLayout from '@/layouts/dashboard/SidebarLayout'
+import { useInitApp } from '@/hooks/hooks'
 
 export default function App() {
-  const initDataApp = useStore((store) => store.initDataApp)
-  const init = useStore((store) => store.init)
-  const scrapersData = SCRAPER_CARDS_DB
+  const init = useInitApp()
 
-  useEffect(() => {
-    const appInitialization = () => {
-      if (!init) {
-        setTimeout(() => {
-          initDataApp({ scrapers: scrapersData })
-        }, 5000)
-      }
-    }
-    appInitialization()
-  }, [init, initDataApp, scrapersData])
-
-  if (!init) {
-    return <Loader />
-  }
+  if (!init) return <Loader />
 
   if (init) {
     return (
