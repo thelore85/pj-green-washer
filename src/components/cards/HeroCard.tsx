@@ -1,5 +1,4 @@
 import { useStore } from '@/store/appStore'
-import BodyCanvas from '../../layouts/sidebar/BodyCanvas'
 import Button from '../cta/Buttons'
 import { CheckCircle } from 'lucide-react'
 
@@ -13,9 +12,10 @@ export default function BackupCard() {
     'Monitor real estate listings and job openings',
     'Collect reviews, opinions, and user sentiment from forums',
   ]
+
   if (!cardSelected) {
     return (
-      <BodyCanvas layout="center">
+      <div className="flex h-full items-center overflow-auto p-4 md:py-10">
         <div className="from-card to-muted ring-border relative m-auto w-full max-w-[800px] rounded-3xl bg-gradient-to-br p-10 shadow-2xl ring-1">
           <h2 className="text-foreground mb-3 text-6xl font-extrabold tracking-tight">
             Sky Scraper
@@ -37,7 +37,7 @@ export default function BackupCard() {
             Start Scraping Now
           </Button>
         </div>
-      </BodyCanvas>
+      </div>
     )
   }
 }

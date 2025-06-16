@@ -2,7 +2,6 @@ import { Pen } from 'lucide-react'
 import Button from '../cta/Buttons'
 import { useEffect, useState } from 'react'
 import type { TScraperCard } from '@/types/compTypes'
-import BodyCanvas from '../../layouts/sidebar/BodyCanvas'
 import { useStore } from '@/store/appStore'
 
 export default function ScraperCard() {
@@ -34,7 +33,7 @@ export default function ScraperCard() {
 
   if (cardSelected) {
     return (
-      <BodyCanvas>
+      <div className="flex-1 overflow-auto p-4 md:py-10">
         <div className="bg-card mx-auto w-full max-w-[800px] rounded-2xl p-6 shadow-md">
           {/* Main Content Header  */}
           <div className="flex items-center justify-between pb-4">
@@ -184,7 +183,7 @@ export default function ScraperCard() {
             </div>
           </form>
         </div>
-      </BodyCanvas>
+      </div>
     )
   }
 }

@@ -1,4 +1,4 @@
-import BackupCard from '@/components/cards/BackupCard'
+import BackupCard from '@/components/cards/HeroCard'
 import ScraperCard from '@/components/cards/ScraperCard'
 import ScraperForm from '@/components/form/ScraperForm'
 import FooterApp from '@/components/navigation/FooterApp'
@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 import { useStore } from './store/appStore'
 import { SCRAPER_CARDS_DB } from '@/lib/utils'
 import Loader from './components/common/Loader'
-import SidebarLayout from './layouts/sidebar/SidebarLayout'
+import SidebarLayout from './layouts/dashboard/SidebarLayout'
 
 export default function App() {
   const initDataApp = useStore((store) => store.initDataApp)

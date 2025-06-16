@@ -5,6 +5,8 @@ export type AppStore = {
   scrapers: TScraperCard[]
   cardSelected: string | null
   isNewScraperFormOpen: boolean
+  searchQuery: string
+  setSearchQuery: (query: string) => void
   initDataApp: (data: Partial<AppStore>) => void
   selectCard: (id: string | null) => void
   setNewScraperFormOpen: (isOpen: boolean) => void

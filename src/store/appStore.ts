@@ -10,8 +10,10 @@ export const useStore = create<AppStore>()(
       cardSelected: null,
       isNewScraperFormOpen: false,
       scrapers: [],
+      searchQuery: '',
 
       // Actions
+      setSearchQuery: (query) => set({ searchQuery: query }),
       initDataApp: (data) => set({ ...data, init: true }),
       selectCard: (id) => set({ cardSelected: id }),
       setNewScraperFormOpen: (isOpen) => set({ isNewScraperFormOpen: isOpen }),
