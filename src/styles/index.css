@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 :root {
   --background: #f2eeee;
@@ -10,21 +10,21 @@
   --card-foreground: #030712;
   --popover: #ffffff;
   --popover-foreground: #ffffff;
-  --primary: #be34ab;
+  --primary: #28a940;
   --primary-foreground: #ffffff;
-  /* --tertiary: #c5c5c5;
-  --tertiary-foreground: #d246c2; */
-  --secondary: #7d51d6;
+  --tertiary: #d2ffd0;
+  --tertiary-foreground: #252525;
+  --secondary: #7deba5;
   --secondary-foreground: #ffffff;
   --muted: #dcdcdc;
   --muted-foreground: #707a8a;
-  --accent: #e124a2;
+  --accent: #009338;
   --accent-foreground: #ffffff;
   --destructive: #942121;
   --destructive-foreground: #f9fafb;
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #fca5a5;
+  --ring: #d0fca5;
   --radius: 0.5rem;
   --sidebar-background: #fafafa;
   --sidebar-foreground: #3f3f46;
@@ -81,6 +81,8 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-foreground: var(--tertiary-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
