@@ -1,24 +1,28 @@
-import { SCRAPER_CARDS_DB } from '@/lib/utils'
+import { CLAIM_CARD_DB } from '@/lib/db'
 import { useStore } from '@/store/appStore'
 import { useEffect } from 'react'
 
 export const useInitApp = () => {
-  // Load all data before launch the app
-  const scrapersData = SCRAPER_CARDS_DB
-
+  // App Store
   const init = useStore((store) => store.init)
   const initDataApp = useStore((store) => store.initDataApp)
+
+  // Obj definition
+  const claimCards = CLAIM_CARD_DB
+  const urlList = [...new Set(claimCards.map((claim) => claim.url))]
+  const initObj = { claimCards, urlList }
 
   useEffect(() => {
     const appInitialization = () => {
       if (!init) {
         setTimeout(() => {
-          initDataApp({ scrapers: scrapersData })
-        }, 3000)
+          initDataApp(initObj)
+        }, 2000)
       }
     }
     appInitialization()
-  }, [init, initDataApp, scrapersData])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [init])
 
   return init
 }

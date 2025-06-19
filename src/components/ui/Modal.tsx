@@ -1,11 +1,4 @@
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogFooter,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog'
 
 type ModalProps = {
   open: boolean
@@ -13,29 +6,19 @@ type ModalProps = {
   title: string
   triggerLabel?: string
   children: React.ReactNode
-  onSubmit?: () => void
 }
 
-export function Modal({ open, onOpenChange, title, children, onSubmit }: ModalProps) {
+export function Modal({ open, onOpenChange, title, children }: ModalProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>{title}</DialogTitle>
         </DialogHeader>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault()
-            onSubmit?.()
-            onOpenChange(false)
-          }}
-          className="space-y-4"
-        >
+        <div>
           {children}
-          <DialogFooter>
-            <Button type="submit">Salva</Button>
-          </DialogFooter>
-        </form>
+          <DialogFooter></DialogFooter>
+        </div>
       </DialogContent>
     </Dialog>
   )

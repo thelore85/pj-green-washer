@@ -1,13 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTree } from '@fortawesome/free-solid-svg-icons'
+import logo from '@/assets/logos/logo_full_white_bg.jpeg'
+import { useStore } from '@/store/appStore'
 
 export default function LogoMain() {
+  const resetUrlSelection = useStore((store) => store.selectUrl)
+
+  const handleLogoClick = () => {
+    resetUrlSelection(null)
+  }
+
   return (
     <div className="flex items-center">
-      <div className="bg-tertiary text-primary me-3 flex h-10 w-10 items-center justify-center rounded-full">
-        <FontAwesomeIcon icon={faTree} className="text-2xl" />
+      <div className="flex items-center justify-center rounded-full bg-white" onClick={handleLogoClick}>
+        <img src={logo} className="rounded-full" />
       </div>
-      <span className="text-lg font-bold tracking-tight">Green Washer</span>
     </div>
   )
 }

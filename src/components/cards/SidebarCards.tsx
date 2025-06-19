@@ -1,13 +1,10 @@
-import LogoMain from './LogoMain'
-import Button from '../cta/Buttons'
-import SearchInput from '../form/SearchInput'
+import LogoMain from '../navigation/LogoMain'
 import ButtonSetting from '../cta/ButtonSetting'
-import ScraperList from '../cards/ScraperList'
+import ScraperList from './UrlList'
 import { useStore } from '@/store/appStore'
 
 export default function SidebarCards() {
   const selectCard = useStore((state) => state.selectCard)
-  const setNewScraperFormOpen = useStore((state) => state.setNewScraperFormOpen)
 
   const handleResetCardSelection = () => {
     selectCard(null)
@@ -16,18 +13,12 @@ export default function SidebarCards() {
   return (
     <aside className="flex w-64 flex-col bg-gray-300">
       {/* Header  */}
-      <div
-        className="flex min-h-[8vh] items-center bg-gray-300 px-4 shadow"
-        onClick={handleResetCardSelection}
-      >
+      <div className="flex min-h-[8vh] items-center bg-gray-300 px-4 shadow" onClick={handleResetCardSelection}>
         <LogoMain />
       </div>
 
       {/* Sidebar Actions  */}
-      <div className="p-4">
-        <Button label="+ New Scraper" onClick={() => setNewScraperFormOpen(true)} />
-        <SearchInput placeholder="Search Scrapers" />
-      </div>
+      <div className="p-4">{/* <SearchInput placeholder="Search Scrapers" /> */}</div>
 
       {/* Sidebar Body  */}
       <ScraperList />

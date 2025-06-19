@@ -1,4 +1,4 @@
-import SidebarCards from '@/components/navigation/SidebarCards'
+import SidebarCards from '@/components/cards/SidebarCards'
 
 type SidebarLayoutPorps = {
   children: React.ReactNode

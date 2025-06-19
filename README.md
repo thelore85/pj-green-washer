@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# Bigweb - React Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A base frontend template for client-side React applications.
+Designed to provide a modern, performant, and easily extensible stack with strict typing, minimal state management, and a composable design system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Framework & Design
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+
+### State Management
+
+- [Zustand](https://zustand-demo.pmnd.rs/)
+
+### Typing & Validation
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Zod](https://zod.dev/)
+
+### Testing & Linting
+
+- [Vitest](https://vitest.dev/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [ESLint](https://eslint.org/)
+
+---
+
+## Requirements
+
+- Node.js version 18 or higher
+- npm (comes with Node.js) or yarn
+- Recommended code editor: VSCode with TypeScript and ESLint extensions
+- Git CLI for version control and cloning the repository
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/bigweb-react-template.git
+cd bigweb-react-template
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available Scripts
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Build for production     |
+| `npm run preview` | Preview production build |
+| `npm run lint`    | Run linter               |
+| `npm run test`    | Run tests                |
+
+---
+
+## Basic Structure
+
 ```
+src/
+├── components/      # UI components (shadcn + custom)
+├── store/           # Zustand stores
+├── hooks/           # Custom hooks
+├── pages/           # App pages (route-based)
+├── lib/             # Utility libraries (e.g. zod schemas)
+├── assets/          # Static assets
+├── App.tsx          # Root component
+└── main.tsx         # Entry point
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
+You are required to give appropriate credit to the original author in any derived work or distribution.

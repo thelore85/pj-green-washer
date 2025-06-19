@@ -8,17 +8,16 @@ export const useStore = create<AppStore>()(
       // Data Store
       init: false,
       cardSelected: null,
-      isNewScraperFormOpen: false,
-      scrapers: [],
+      urlSelected: null,
+      claimCards: [],
+      urlList: [],
       searchQuery: '',
 
       // Actions
       setSearchQuery: (query) => set({ searchQuery: query }),
       initDataApp: (data) => set({ ...data, init: true }),
       selectCard: (id) => set({ cardSelected: id }),
-      setNewScraperFormOpen: (isOpen) => set({ isNewScraperFormOpen: isOpen }),
-      setNewScraper: (newScraper) =>
-        set((store) => ({ scrapers: [...store.scrapers, newScraper] })),
+      selectUrl: (url) => set({ urlSelected: url }),
     }),
     {
       name: 'appStorage',
