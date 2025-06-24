@@ -9,7 +9,7 @@ export default function ClaimCard({ card, setSelectedClaim }: ClaimCardProps) {
   const status = card.legal_reasoning.overall.color
 
   return (
-    <div className="bg-card mx-auto mb-4 w-full max-w-[800px] cursor-pointer rounded-2xl shadow-md transition-transform hover:scale-[1.01]" onClick={() => setSelectedClaim(card)}>
+    <div className="mx-auto mb-6 w-full cursor-pointer rounded-2xl bg-gray-100 shadow-md transition-transform hover:scale-[1.01]" onClick={() => setSelectedClaim(card)}>
       <div className="flex items-center gap-4 p-6">
         {/* Semaforo */}
         <div className="flex flex-col items-center justify-center space-y-1">
@@ -20,7 +20,7 @@ export default function ClaimCard({ card, setSelectedClaim }: ClaimCardProps) {
 
         {/* Content */}
         <div className="flex-1">
-          <h1 className="text-foreground mb-2 text-xl leading-snug font-bold">
+          <h1 className="text-foreground mb-2 text-lg leading-snug font-bold">
             {card.claim?.slice(0, 100)} {card.claim.length > 100 && '...'}
           </h1>
           <p className="text-muted-foreground truncate text-sm font-light">{card.url}</p>

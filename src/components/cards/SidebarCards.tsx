@@ -1,6 +1,6 @@
 import LogoMain from '../navigation/LogoMain'
 import ButtonSetting from '../cta/ButtonSetting'
-import ScraperList from './UrlList'
+import ArticlePreviewList from './ArticlePreviewList'
 import { useStore } from '@/store/appStore'
 
 export default function SidebarCards() {
@@ -21,7 +21,7 @@ export default function SidebarCards() {
       <div className="p-4">{/* <SearchInput placeholder="Search Scrapers" /> */}</div>
 
       {/* Sidebar Body  */}
-      <ScraperList />
+      <ArticlePreviewList />
       {/* Sidebar Footer  */}
       <div className="mx-4 border-t-1 border-gray-100 py-4">
         <ButtonSetting label="Settings" />

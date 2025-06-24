@@ -4,7 +4,7 @@ type UrlCardProps = {
   url: string
 }
 
-export default function UrlCard({ url }: UrlCardProps) {
+export default function ArticlePreviewCard({ url }: UrlCardProps) {
   const selectUrl = useStore((state) => state.selectUrl)
   const handleUrlPreviewClick = () => {
     selectUrl(url)

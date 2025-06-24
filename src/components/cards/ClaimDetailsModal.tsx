@@ -8,7 +8,6 @@ type ClaimDetailsProps = {
 }
 
 export default function ClaimDetailsModal({ card, isOpen, setIsOpen }: ClaimDetailsProps) {
-  console.log('//// card: ', card)
   return (
     <Modal open={isOpen} onOpenChange={() => setIsOpen(null)} title="Claim Details">
       <div className="text-md text-gray-700">

@@ -22,10 +22,8 @@ export default function Loader() {
     <div className="bg-primary flex h-dvh items-center">
       <div className="m-auto text-center">
         <div className="mb-3">
-          <h1 className="text-4xl font-bold tracking-tight text-white">Sky Scraper</h1>
-          <p className="text-center text-xs font-light tracking-tight text-white">
-            Explore the web. Harvest data. Stay free.
-          </p>
+          <h1 className="text-4xl font-bold tracking-tight text-white">MASKA</h1>
+          <p className="text-center text-xs font-light tracking-tight text-white">Green Impact Metrics.</p>
         </div>
         <Progress value={progress} />
       </div>

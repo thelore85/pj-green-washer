@@ -4,7 +4,7 @@ import NavMain from '@/components/navigation/NavMain'
 import Loader from '@/components/common/Loader'
 import SidebarLayout from '@/layouts/dashboard/SidebarLayout'
 import { useInitApp } from '@/hooks/hooks'
-import ClaimList from './components/cards/ClaimList'
+import ArticleMain from './components/cards/ArticleMain'
 
 export default function App() {
   const init = useInitApp()
@@ -16,8 +16,7 @@ export default function App() {
       <>
         <SidebarLayout>
           <NavMain />
-          {/* <ClaimCard /> */}
-          <ClaimList />
+          <ArticleMain />
           <BackupCard />
           <FooterApp />
         </SidebarLayout>
