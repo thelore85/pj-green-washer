@@ -1,568 +1,420 @@
 export const CLAIM_CARD_DB = [
   {
-    id: 1,
+    article_id: 1,
+    title: 'Repsol y la Descarbonización',
     url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/descarbonizacion/index.cshtml',
-    claim: 'El compromiso de Repsol con la descarbonización',
-    categories: ['Claim sobre producto/empresa entera'],
-    relevant_laws: 'Anexo I 4 ter UCPD',
-    evidence_needed: "Resultados verificables de reducción de emisiones, documentos sobre el 'Compromiso Cero Emisiones Netas', estrategias verificadas y audibles de implementación de proyectos.",
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: "Documento: 'Informe de Gestión Integrado 2024'",
-        explanation: 'Presenta informes sobre reducción de emisiones, inversiones en energías renovables y estrategia de descarbonización.',
+    evaluation_summary:
+      'El texto contiene varias afirmaciones relacionadas con compromisos de descarbonización y neutralidad de carbono, sin embargo, adolece de falta de detalles específicos y verificables. La mayoría de las alegaciones presentan riesgos por carecer de evidencias concretas, metodologías públicas o artículos auditables. El uso de conceptos como neutralidad de carbono y reducción de emisiones requiere ser soportado por planes específicos verificables para ajustarse a las regulaciones de la UE.',
+    text_summary:
+      'El artículo aborda la importancia de la descarbonización en la estrategia de Repsol, detallando sus compromisos de reducción de carbono y describiendo sus esfuerzos en tecnologías bajas en carbono y eficiencia energética. Habla de compromisos futuros en la reducción de la intensidad de carbono y actividades como la compensación voluntaria de emisiones a través de proyectos forestales. También menciona la apuesta de Repsol por combustibles de baja huella de carbono y el uso de energía renovable en su portafolio.',
+    claims: [
+      {
+        claim_id: 1,
+        claim: 'diminuimos la intensidad de carbono del 15% para 2025, del 28% para 2030 y del 55% para 2040.',
+        categories: ['Meta futura sin plan verificable'],
+        relevant_laws: 'Art. 6 (2) d UCPD',
+        evidence_needed: 'Plan de acción y hoja de ruta detallada, con hitos y metodología públicamente disponible y auditable.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'Documentación proporciona datos sobre emisiones y reducciones planificadas de GEI (Indicador de Intensidad de Carbono) para 2025, 2030 y 2040.',
+          },
+          sufficiency: {
+            result: 'Parcial',
+            explanation: 'Se detallan acciones y objetivos contextuales, pero faltan hitos intermedios verificables.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'La documentación es reciente, fechada en 2024, dentro del periodo pertinente del claim.',
+          },
+          independence: {
+            result: 'Interna',
+            explanation: 'Repsol usa metodología propia, validada por verificador interno, no evidencia externa.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Art. 6 (2) d) UCPD',
+          razonamiento:
+            'El claim de Repsol sobre sus metas de emisión de GEI para 2025, 2030 y 2040 cumple con la existencia y actualidad de la información requerida, según el Art. 7 § 4 al proporcionar documentación pertinente y reciente. Sin embargo, la insuficiencia de hitos intermedios verificables (véase TJUE C-632/16 *Dyson*, §§ 57-59) impide una cobertura completa del horizonte temporal del claim. Además, la dependencia de verificación interna en lugar de un tercero acreditado (como se propone en la Green-Claims Directive) representa un fallo crítico de independencia, violando el Art. 6 (2) d) que exige la verificación externa de metas futuras sin un plan público verificable.',
+          consecuencia: 'Práctica engañosa, hasta 4 % facturación UE o 2 M €.',
+          overall: {
+            color: 'Rojo',
+            recommendation: 'Recomendamos la introducción de verificación externa acreditada para reducir el riesgo crítico.',
+          },
+        },
       },
-      sufficiency: {
-        result: 'Completa',
-        source: "Documento: 'Informe de Gestión Integrado 2024'",
-        explanation: 'Incluye datos detallados sobre emisiones, metas de reducción y estrategias de transición hacia energías limpias.',
+      {
+        claim_id: 2,
+        claim: 'hemos adaptado nuestras estrategias y objetivos iniciales a unos mucho más exigentes.',
+        categories: ['Meta futura sin plan verificable'],
+        relevant_laws: 'Art. 6 (2) d UCPD',
+        evidence_needed: 'Documentación que explique las estrategias adoptadas, sus objetivos específicos y los pasos necesarios para alcanzarlos.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'Hay informes mensuales de seguimiento, programas detallados, y objetivos específicos que evidencian la adaptación de estrategias por la empresa.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'La evidencia detallada cubre adecuadamente la adaptación de estrategias, incluyendo objetivos y pasos a seguir.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Las evidencias proporcionadas son de 2024, ajustándose a los requisitos temporales de la normativa.',
+          },
+          independence: {
+            result: 'No Aplica',
+            explanation: 'No se requiere certificación externa para estrategia empresarial, basta evidencia verificable y cuantitativa interna.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'No consta infracción de normas específicas según Anexo I.',
+          razonamiento:
+            'El análisis evidencia que la empresa cumple con los requisitos exigidos por la Directiva 2005/29/CE, modificada por la Directiva 2024/825, específicamente en los aspectos de existencia, suficiencia y actualidad. La documentación proporcionada está detallada, cubriendo adecuadamente sus estrategias y adaptaciones. Además, las evidencias son recientes, cumpliendo con los estándares temporales del Art. 7 § 2 b UCPD. Respecto a la independencia, la normativa aplicable admite evidencia interna verificable, prescindiendo de certificación externa, lo cual no resulta infringido en este caso.',
+          consecuencia: 'No hay consecuencias en términos de infracción de prácticas comerciales desleales.',
+          overall: {
+            color: 'Verde',
+            recommendation: 'Mantener la transparencia y actualización de la documentación para continuar cumpliendo con las directrices, asegurando la confianza del consumidor.',
+          },
+        },
       },
-      actuality: {
-        result: 'Actual',
-        source: "Documento: 'Informe de Gestión Integrado 2024'",
-        explanation: 'Los datos y objetivos presentados son de 2024, siendo pertinentes y recientes.',
+      {
+        claim_id: 3,
+        claim: 'iniciativa voluntaria de compensación de emisiones, denominada Compromiso Cero Emisiones Netas, que gestionamos a través de nuestras innovadoras aplicaciones Waylet y Vivit.',
+        categories: ['Neutralidad basada en compensación CO₂'],
+        relevant_laws: 'Anexo I 4 quater UCPD',
+        evidence_needed: 'Detalles sobre los proyectos de compensación utilizados, su verificación y auditoría por terceros para asegurar su efectividad.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'El claim está respaldado por la cancelación de 14,621 tCO₂ en créditos de carbono verificados por estándares VCS de Verra y Gold Standard. Esto indica evidencia existente.',
+          },
+          sufficiency: {
+            result: 'Parcial',
+            explanation: 'La evidencia presentada cubre la gestión de créditos de carbono, pero no especifica totalmente el uso y funcionamiento de las aplicaciones Waylet y Vivit.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Las cancelaciones de créditos verificadas son de 2024, cumpliendo el requisito de actualidad de ≤ 3 años.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'Los créditos de carbono están verificados por VCS de Verra, Gold Standard y CCB, normativas externas y reconocidas.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Art. 6 (1) b y Anexo I 4 quater',
+          razonamiento:
+            'El análisis de evidencia indica que el claim está respaldado por la cancelación de créditos de carbono auditados por Verra y Gold Standard, asegurando la existencia y actualidad. Sin embargo, la suficiencia es parcial ya que no abarca completamente el contexto de las aplicaciones Waylet y Vivit, lo cual podría inducir a error sobre el impacto neutral declarado. Según Art. 6 (1) b y Anexo I 4 quater de la UCPD, un claim basado en neutralidad por compensación de CO₂ requiere especificidad que abarque todas las características principales del servicio o producto. La evidencia independiente mitiga pero no elimina el riesgo de engaño parcial.',
+          consecuencia: 'Práctica engañosa; acción judicial hasta 4 % facturación UE o 2 M €.',
+          overall: {
+            color: 'Naranja',
+            recommendation: 'Clarificar y completar información sobre las aplicaciones Waylet y Vivit para evitar riesgo medio de greenwashing.',
+          },
+        },
       },
-      independence: {
-        result: 'No consta',
-        source: 'Ninguno especificado',
-        explanation: 'No se menciona la validación o certificación externa por un auditor acreditado en la documentación proporcionada.',
+      {
+        claim_id: 4,
+        claim: 'compensar el 100% de las emisiones de CO2 del consumo de ese carburante de forma voluntaria, a través de la colaboración en proyectos forestales.',
+        categories: ['Neutralidad basada en compensación CO₂'],
+        relevant_laws: 'Anexo I 4 quater UCPD',
+        evidence_needed: 'Certificados de los proyectos forestales, metodologías de verificación de compensación y auditorías independientes que validen los resultados.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'Documentos mencionan cancelación de créditos de carbono alineados con estándares Verra VCS, verificables externamente.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'Detalles de cancelación de 14.621 tCO₂ mediante proyectos AFOLU y REDD+ verificados por VCS y CCB + Gold.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Los documentos y créditos cancelados son actuales, del año 2024, cumpliendo la condición de ≤3 años.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'Verificación mencionada por estándar VCS de Verra, reconocido y acreditado para certificación externa.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Art. 7 § 4, Anexo I 4 quater',
+          razonamiento:
+            'La afirmación de neutralidad basada en compensación de CO₂ cumple con la normativa ambiental al presentar evidencia clara de cancelación de 14.621 tCO₂ mediante proyectos validados por VCS y CCB, estándares externos acreditados. Conforme al Anexo I 4 quater, es esencial que estas compensaciones sean verificadas por un tercero independiente, como Verra VCS, para garantizar su credibilidad y evitar el riesgo de prácticas engañosas. Además, la actualización de los documentos asegura el cumplimiento con Art. 7 § 4, preservando la actualidad de la información presentada.',
+          consecuencia: 'Práctica engañosa si la evidencia fuera interna con riesgo de hasta 4% de facturación UE o 2 M €.',
+          overall: {
+            color: 'Verde',
+            recommendation: 'La afirmación es sólida y cumple con los estándares legales establecidos; no se requiere acción inmediata.',
+          },
+        },
       },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Anexo I 2 bis UCPD',
-      razonamiento:
-        'Dada la falta de certificación externa mencionada, el incumplimiento de la independencia del claim se alinea con la infracción contemplada en el Anexo I UCPD, punto 2 bis, que exige un sistema de certificación acreditado. Al no constar validación externa, se afecta el requisito de credibilidad de las afirmaciones medioambientales del documento corporativo, previsto en el marco normativo de la UCPD y propuesta Green-Claims.',
-      consecuencia: 'práctica engañosa, sanción máxima hasta 4 % facturación UE o 2 M €.',
-      overall: {
-        color: 'Rojo',
-        recommendation: 'Implementar validación externa acreditada para todas las afirmaciones medioambientales, rectificando el incumplimiento para evitar sanciones legales sustanciales.',
-      },
-    },
+    ],
   },
   {
-    id: 2,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/descarbonizacion/index.cshtml',
-    claim: 'Compromiso Cero Emisiones Netas en 2050',
-    categories: ['Meta futura sin plan verificable'],
-    relevant_laws: 'Art. 6 (2) d UCPD',
-    evidence_needed: 'Plan detallado de acción para lograr la neutralidad de carbono, hitos auditables establecidos en el tiempo hacia 2050.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024, Estado de Información e Información sobre Sostenibilidad',
-        explanation: 'Repsol presenta métricas específicas como el IIC y metas para 2030 y 2050 reflejando la estrategia hacia cero emisiones netas.',
-      },
-      sufficiency: {
-        result: 'Parcial',
-        source: 'Informe de Gestión Integrado 2024, Estado de Información e Información sobre Sostenibilidad',
-        explanation: 'Las metas intermedias y métricas reflejan un esfuerzo, pero no cubren completamente el scope 3 y la verificación externa es limitada.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Fuente: Informe de Gestión Integrado 2024',
-        explanation: 'Las evidencias son del año 2024, cumpliendo con la exigencia de ser ≤ 3 años antes del claim.',
-      },
-      independence: {
-        result: 'Interna',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'No hay indicación de certificador externo, solo verificador interno.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 §§ 4-5 UCPD, Anexo I 2 bis',
-      razonamiento:
-        "El 'claim' corporativo de Repsol sobre cero emisiones netas está basado en evidencias presentes en el 'Informe de Gestión Integrado 2024'. Sin embargo, existe insuficiencia en el cubrimiento del scope 3 y la verificación externa es parcial, lo cual infringe el Art. 7 §§ 4-5 UCPD al no presentar pruebas completamente claras y verificables. Además, la dependencia de verificación interna contraviene el Anexo I 2 bis, que exige una certificación externa. Por lo tanto, mientras el hecho presenta un compromiso hacia sostenibilidad, la falta de certificación externa robusta y el alcance insuficiente de las pruebas comprometen la validez del claim.",
-      consecuencia: 'Omisión engañosa, hasta 4% facturación UE o 2 millones €',
-      overall: {
-        color: 'Naranja',
-        recommendation: 'Repsol debe ampliar la verificación externa para cubrir scope 3 y obtener certificación independiente para mitigar riesgos de riesgo medio de greenwashing.',
-      },
-    },
-  },
-  {
-    id: 3,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/descarbonizacion/index.cshtml',
-    claim: 'Iniciativa voluntaria de compensación de emisiones llamada Compromiso Cero Emisiones Netas',
-    categories: ['Neutralidad basada en compensación CO₂'],
-    relevant_laws: 'Anexo I 4 quater UCPD',
-    evidence_needed: 'Certificaciones de proyectos de compensación auditados, datos sobre la cantidad de emisiones realmente compensadas y cómo se mide esta compensación.',
-    analysis: {
-      existence: {
-        result: 'Yes',
-        source: 'Informe de Gestión Integrado 2024 de Grupo Repsol',
-        explanation: 'Se identifican créditos de carbono verificados por estándares reconocidos como VCS, CCB + Gold, validando la compensación de emisiones del claim.',
-      },
-      sufficiency: {
-        result: 'Partial',
-        source: 'Informe de Gestión Integrado 2024 de Grupo Repsol',
-        explanation: 'Aunque documenta créditos de carbono, el claim no se vincula claramente a toda la magnitud propuesta de cero emisiones netas.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024 de Grupo Repsol',
-        explanation: 'Las evidencias están fechadas en 2024, cumpliendo el requisito de actualidad para el claim.',
-      },
-      independence: {
-        result: 'Independent',
-        source: 'Informe de Gestión Integrado 2024 de Grupo Repsol',
-        explanation: 'Los créditos de carbono son verificados por el estándar VCS de Verra, indicando auditoría externa independiente.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 § 4 ter UCPD',
-      razonamiento:
-        "El Informe de Gestión Integrado del Grupo Repsol 2024 presenta evidencia de créditos de carbono verificados por estándares reconocidos, indicando la existencia de compensación de emisiones. Sin embargo, la magnitud del claim de 'cero emisiones netas' no está plenamente respaldada, lo que constituye una infracción según el Art. 7 § 4 ter UCPD, que requiere que la afirmación de impacto neutro se aplique a la totalidad del producto. Esta falta de claridad puede inducir al consumidor a una interpretación incorrecta del alcance de la compensación de emisiones.",
-      consecuencia: 'Práctica engañosa, sancionable hasta el 4 % de la facturación en la UE o 2 M €.',
-      overall: {
-        color: 'Naranja',
-        recommendation:
-          'Revisar la documentación para vincular claramente la totalidad del claim a los créditos de carbono verificados y asegurar una cobertura completa de las afirmaciones medioambientales.',
-      },
-    },
-  },
-  {
-    id: 4,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/descarbonizacion/index.cshtml',
-    claim: 'Producción de combustibles de bajo carbono y orientados a la economía circular, como los nuevos biocombustibles',
-    categories: ['Afirmación ambiental genérica'],
-    relevant_laws: 'Anexo I 4 bis UCPD',
-    evidence_needed: 'Información detallada sobre los combustibles producidos y en qué medida se consideran bajos en carbono, evidencia sobre métodos de producción orientados a la economía circular.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Se menciona la fabricación de biocombustibles (CCM 4.13) en actividades elegibles y sostenibles según la taxonomía.',
-      },
-      sufficiency: {
-        result: 'Parcial',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La documentación cubre biocombustibles, pero no especifica la totalidad del proceso ni verifica baja emisión de carbono.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La información es de 2024, lo cual cumple con el requisito de período pertinente.',
-      },
-      independence: {
-        result: 'Independiente',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Participación de entidades como ISO y el Banco Europeo de Inversiones certifican procesos.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 § 4 UCPD',
-      razonamiento:
-        'Aunque se cumple con el criterio de existencia bajo el Art. 7 § 4 UCPD, el análisis de evidencia muestra insuficiencias en la cobertura documental del claim. La prueba no abarca completamente el alcance lingüístico relativo a la baja emisión de carbono de los biocombustibles, tal como exige la jurisprudencia en el caso TJUE C-632/16 *Dyson*. Esto sugiere una posible omisión engañosa que podría inducir al consumidor a tomar decisiones mal informadas.',
-      consecuencia: 'Práctica engañosa, sancionable con hasta 4 % de la facturación UE o 2 M €.',
-      overall: {
-        color: 'Naranja',
-        recommendation: 'Actualizar documentación para cubrir específicamente la emisión de carbono en biocombustibles.',
-      },
-    },
-  },
-  {
-    id: 5,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/descarbonizacion/index.cshtml',
-    claim: 'Invirtiendo en generación eólica y solar',
-    categories: ['Beneficio irrelevante'],
-    relevant_laws: 'Art. 6 (2) e UCPD',
-    evidence_needed: 'Detallado comparación de inversión en energías renovables versus fósiles dentro de la empresa, cantidad de energía renovable producida versus fósil.',
-    analysis: {
-      existence: {
-        result: 'No',
-        source: 'Documentación proporcionada por la empresa Repsol',
-        explanation: 'No se encuentra información específica sobre inversiones en generación eólica o solar.',
-      },
-      sufficiency: {
-        result: 'Insuficiente',
-        source: 'Conjunto de documentos de Repsol',
-        explanation: 'La documentación no proporciona evidencia suficiente para afirmar inversiones específicas en generación eólica y solar.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Los datos proporcionados son de 2024, cumpliendo el requisito de actualidad.',
-      },
-      independence: {
-        result: 'No consta',
-        source: 'Documentación Repsol 2024',
-        explanation: 'No se menciona auditor o certificador externo en la información analizada.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 §§ 4-5 UCPD + Anexo I 4 ter',
-      razonamiento:
-        'La ausencia de información clara y verificable sobre las inversiones en generación eólica o solar infringe el Art. 7 §§ 4-5 UCPD, ya que no se proporcionan pruebas accesibles para el consumidor o la autoridad para respaldar las afirmaciones medioambientales. Además, el claim puede ser considerado engañoso conforme al Anexo I 4 ter, al referirse a inversiones generales cuando podrían no existir para la totalidad del claim. Sin auditoría externa acreditada, se incumple la norma de Independencia, incrementando así el riesgo de greenwashing.',
-      consecuencia: 'Práctica engañosa, con sanciones de hasta el 4 % de facturación en la UE o 2 M €.',
-      overall: {
-        color: 'Rojo',
-        recommendation:
-          'Se recomienda revisar y documentar adecuadamente las inversiones ambientales específicas y someter las verificaciones a auditorías externas acreditadas para minimizar el riesgo de sanciones legales.',
-      },
-    },
-  },
-  {
-    id: 6,
+    article_id: 2,
+    title: 'Repsol y la Sostenibilidad',
     url: 'https://www.repsol.com/es/sostenibilidad/index.cshtml',
-    claim: 'Sostenibilidad en Repsol | Compromiso con el futuro',
-    categories: ['Afirmación ambiental genérica', 'Claim sobre producto/empresa entera'],
-    relevant_laws: 'Anexo I 4 bis UCPD',
-    evidence_needed:
-      'Información detallada sobre políticas y prácticas específicas que Repsol está implementando para cumplir con sus compromisos de sostenibilidad, incluyendo métricas verificables.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'El claim se respalda con datos sobre reducción de emisiones y transición energética, incluidos en el Informe de Gestión Integrado 2024.',
+    evaluation_summary:
+      'El texto de Repsol contiene varias afirmaciones ambientales relevantes que podrían generar riesgos legales si no se proporciona evidencia verificable y claridad en cuanto a cómo se logrará lo prometido. Las frases utilizan términos vagos o prometen metas futuras sin detallar los planes concretos para alcanzarlas.',
+    text_summary:
+      'Repsol presenta su compromiso con la sostenibilidad, destacando objetivos como ser cero emisiones netas en 2050 y el uso de un indicador de intensidad de carbono para monitorizar la descarbonización. Se informa sobre estrategia de sostenibilidad y contribuciones a los ODS, junto con una sección sobre energía universal cero emisiones netas.',
+    claims: [
+      {
+        claim_id: 5,
+        claim: 'Somos una compañía energética comprometida con el desarrollo sostenible.',
+        categories: ['Afirmación ambiental genérica – Anexo I 4 bis'],
+        relevant_laws: 'Anexo I 4 bis UCPD',
+        evidence_needed: 'Datos específicos y cuantificables sobre iniciativas de sostenibilidad y evidencia de su impacto.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'Los informes de sostenibilidad y gestión integrados presentan datos sobre acciones, emisiones y objetivos relacionados con desarrollo sostenible.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'Se incluye evidencia detallada del impacto ambiental y económico de medidas sostenibles.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Los informes y datos son del año 2024, muy recientes para apoyar el claim actual.',
+          },
+          independence: {
+            result: 'No Aplica',
+            explanation: 'El claim es genérico y apunta más a la política de sostenibilidad interna que a certificaciones externas.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Art. 7 § 2',
+          razonamiento:
+            'El claim corporativo se apoya en informes de sostenibilidad que proporcionan datos detallados y actualizados del año 2024 sobre acciones y objetivos de desarrollo sostenible. Cumple con el requisito de existencia y suficiencia, conforme al Art. 7 §§ 4-5 UCPD, que exigen pruebas claras y verificables. La actualidad se asegura con información reciente. Aunque la independencia no es aplicable al tratarse de un claim genérico centrado en la política interna, el cumplimiento normativo reduce el riesgo de greenwashing.',
+          consecuencia: 'El claim es una práctica engañosa según Art. 7 § 2, no requiriendo certificación externa, las sanciones pueden alcanzar hasta el 4 % de la facturación en la UE o 2 M €.',
+          overall: {
+            color: 'Naranja',
+            recommendation: 'Revisar la claridad del claim para asegurar que la independencia y verificabilidad puedan ser comprobadas fácilmente por el consumidor.',
+          },
+        },
       },
-      sufficiency: {
-        result: 'Parcial',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'El claim se cubre parcialmente con iniciativas de descarbonización y oferta multienergética, pero falta verificación externa.',
+      {
+        claim_id: 6,
+        claim: 'Con el compromiso de llegar a ser una compañía de cero emisiones netas en 2050.',
+        categories: ['Meta futura sin plan verificable – Art. 6 (2) d'],
+        relevant_laws: 'Art. 6 (2) d UCPD',
+        evidence_needed: 'Hoja de ruta detallada con hitos verificables, métricas y metodología para alcanzar la meta de cero emisiones netas.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'Documentos incluyen un plan de transición y métricas de reducción de emisiones concretas para 2030 y 2050, respaldando el claim.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'Se detalla la estrategia hacia cero emisiones en 2050 con metas intermedias y múltiples métricas, cubriendo el claim completamente.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'La evidencia es de 2024 y los planes y objetivos están actualizados, dentro del periodo aceptable de tres años.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'Auditoría externa de emisiones por Deloitte conforme a normas ISO y verificación por terceros como OGMP.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'No consta infracción de la Directiva 2005/29/CE ni de sus modificatorias, incluyendo 2024/825.',
+          razonamiento:
+            'La empresa presenta un claim sobre su objetivo de reducción de emisiones y transición energética con evidencia que cumple con los requisitos de la Directiva 2005/29/CE. Conforme al Art. 7 §§ 4-5, la documentación es clara y verificable, además de estar certificada por un auditor externo acreditado, cumpliendo lo exigido por el Anexo I 4 ter. El claim se sustenta en datos actualizados (2024) y detallados, cumpliendo con los requisitos de suficiencia y actualidad exigidos. Por tanto, no se aprecia práctica engañosa u omisión engañosa.',
+          consecuencia: 'Práctica no engañosa. No aplica sanción.',
+          overall: {
+            color: 'Verde',
+            recommendation: 'Mantener la transparencia y la verificación externa para asegurar cumplimiento continuo.',
+          },
+        },
       },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La información del informe data de 2024, dentro de periodo relevante (≤3 años antes del claim).',
+      {
+        claim_id: 7,
+        claim: 'Para lograrlo, hemos fijado una exigente hoja de ruta que incluye metas ambiciosas.',
+        categories: [],
+        relevant_laws: '',
+        evidence_needed: 'Detalles específicos sobre las metas y la metodología de la hoja de ruta mencionada.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'La documentación incluye hojas de ruta con metas detalladas vinculadas a sostenibilidad y descarbonización, revisadas por Deloitte.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'La evidencia presentada cubre distintas metas de descarbonización alineadas con planes sostenibles y políticas detalladas.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'La hoja de ruta y planes presentados están actualizados al año 2024, con metas específicas para 2024-2030.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'La revisión externa de Deloitte es adecuada y asegura independencia en la validación del claim.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Ninguna infracción identificada',
+          razonamiento:
+            'El análisis de evidencia demuestra que el claim relacionado con sostenibilidad y descarbonización cumple con los requisitos establecidos en las directivas aplicables. Hay documentación clara y accesible que verifica la existencia del claim (Art. 7 § 4 UCPD). La prueba presentada es completa y abarca los aspectos mencionados en el claim, mostrando suficiencia (TJUE C-632/16). La actualidad de la información está corroborada con datos recientes (Art. 7 § 2 b). La independencia se asegura mediante una revisión externa de Deloitte, cumpliendo con el criterio de independencia (Anexo I 2 bis).',
+          consecuencia: 'No práctica engañosa',
+          overall: {
+            color: 'Verde',
+            recommendation: 'Mantener la transparencia y la actualización continua de la documentación para garantizar un bajo riesgo de greenwashing.',
+          },
+        },
       },
-      independence: {
-        result: 'No consta',
-        source: '',
-        explanation: 'No se menciona certificador o auditor externo acreditado para confirmación independiente del claim.',
+      {
+        claim_id: 8,
+        claim: 'Energía universal cero emisiones netas',
+        categories: ['Neutralidad basada en compensación CO₂ – Anexo I 4 quater'],
+        relevant_laws: 'Anexo I 4 quater UCPD',
+        evidence_needed: 'Claridad sobre el uso de compensaciones de CO₂ y otras medidas para lograr la neutralidad, junto con evidencia de su efectividad.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'Se mencionan iniciativas concretas para la reducción de emisiones de GEI, incluyendo tecnología CCS y objetivos de cero emisiones netas.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'La evidencia detalla el uso de CCS, biocombustibles y cancelación de créditos Verra, cubriendo todos los aspectos del claim.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Los informes y métricas de emisiones son de 2024, cumpliendo criterios de actualidad establecidos en las directivas.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'Las emisiones y esfuerzos de mitigación son validados por auditores externos según la norma ISO 14064.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'No aplica',
+          razonamiento:
+            'El claim corporativo cumple técnicamente con los requisitos establecidos en la Directiva 2005/29/CE y la reforma 2024/825 para evitar el greenwashing. Las iniciativas mencionadas para la reducción de emisiones de GEI son verificables, con la participación de tecnología CCS y cancelación de créditos Verra, lo cual encuadra en una afirmación ambiental detallada y completa según el TJUE C-632/16 *Dyson*. La evidencia proporcionada es actual, con informes de 2024 que sostienen la actualización requerida por el Art. 7 § 2 b UCPD, y cuenta con verificación externa conforme a la norma ISO 14064, conforme al Anexo I 4 quater.',
+          consecuencia: 'Práctica no engañosa',
+          overall: {
+            color: 'Verde',
+            recommendation: 'El establece una práctica transparente y responsable con suficiente certificación externa. No se requiere acción adicional.',
+          },
+        },
       },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Anexo I 2 bis y Art. 7 § 4',
-      razonamiento:
-        'El claim corporativo sobre reducción de emisiones y transición energética está respaldado por el Informe de Gestión Integrado 2024, pero la prueba es insuficiente al faltar verificación externa, lo que contraviene el requisito de suficiencia del TJUE C-632/16 *Dyson*, §§ 57-59. Además, no consta certificación independiente, infringiendo el Anexo I 2 bis UCPD, que exige un sistema de certificación acreditado. Sin un certificador externo, existe riesgo de que el claim sea engañoso, conforme al Art. 7 § 4, afectando la capacidad del consumidor de tomar decisiones informadas.',
-      consecuencia: 'práctica engañosa',
-      overall: {
-        color: 'Rojo',
-        recommendation:
-          'Realizar una auditoría externa para verificar las afirmaciones del Informe de Gestión Integrado y asegurar cumplimiento con los requisitos legales para reducir riesgo de sanciones.',
-      },
-    },
+    ],
   },
   {
-    id: 7,
-    url: 'https://www.repsol.com/es/sostenibilidad/index.cshtml',
-    claim: 'Compromiso de llegar a ser una compañía de cero emisiones netas en 2050',
-    categories: ['Meta futura sin plan verificable', 'Neutralidad basada en compensación CO₂'],
-    relevant_laws: 'Art. 6 (2) d UCPD',
-    evidence_needed: 'Hoja de ruta detallada con medidas específicas, plazos y auditorías independientes para verificar avances hacia la neutralidad en emisiones.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Documentos incluyen planes, métricas y compromisos para 2050 relacionados con cero emisiones netas.',
-      },
-      sufficiency: {
-        result: 'Parcial',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La evidencia aborda varios aspectos del claim, pero no cubre todas las actividades necesarias para alcanzar cero emisiones netas.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Los datos y objetivos están actualizados a 2024, dentro del periodo pertinente de tres años.',
-      },
-      independence: {
-        result: 'Independiente',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Repsol utiliza auditoría externa (ISO 14064) y valida métricas de emisiones, asegurando independencia.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 § 2 b UCPD',
-      razonamiento:
-        "El análisis de evidencia indica que la prueba sobre los claims relacionados con el compromiso de cero emisiones netas para 2050 es 'Parcial', ya que no abarca todas las actividades necesarias para cumplir dicho objetivo. Según el Tribunal de Justicia de la Unión Europea en el caso *Dyson* (C-632/16, §§ 57-59), la suficiencia de la evidencia debe cubrir completamente el alcance lingüístico del claim. Aunque existen pruebas de auditoría independiente bajo ISO 14064, la insuficiencia en el alcance convierte este claim en potencialmente engañoso bajo el Art. 7 § 2 UCPD. Resulta en una 'omisión engañosa'.",
-      consecuencia: 'omisión engañosa, sanción hasta 2 M €',
-      overall: {
-        color: 'Naranja',
-        recommendation: 'Mejorar la evidencia de soporte para cubrir completamente todas las actividades necesarias para el claim de cero emisiones netas.',
-      },
-    },
-  },
-  {
-    id: 8,
-    url: 'https://www.repsol.com/es/sostenibilidad/index.cshtml',
-    claim: 'Indicador de Intensidad de Carbono (IIC)',
-    categories: [],
-    relevant_laws: '',
-    evidence_needed: 'Desglose del método de cálculo del IIC, cómo se aplica en la práctica, y cómo se verifica junto con datos actualizados y auditables.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Numerosas fuentes detallan el cálculo del IIC, vinculando distintas emisiones (alcance 1, 2 y 3) y energía producida.',
-      },
-      sufficiency: {
-        result: 'Parcial',
-        source: 'Estado de Información sobre Sostenibilidad',
-        explanation: 'Se detallan emisiones y metodología para IIC, pero falta cobertura explícita de todos impactos prometidos en el claim.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La información del IIC está inmediatamente relacionada con los documentos de 2024, dentro del período pertinente de 3 años.',
-      },
-      independence: {
-        result: 'Independiente',
-        source: 'Proceso de evaluación con Deloitte',
-        explanation: 'Deloitte supervisó aspectos de transición energética, aportando independencia a la evaluación del claim.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 § 4 UCPD',
-      razonamiento:
-        'El claim corporativo empaqueta información parcialmente suficiente respecto al impacto ambiental total prometido, según el Estado de Información sobre Sostenibilidad. Aunque el Informe de Gestión Integrado 2024 verifica la existencia y actualidad de datos, faltan aspectos que cubran explícitamente todos los impactos prometidos, infringiendo potencialmente el Art. 7 § 4 UCPD, que exige que no se omita información sustancial para formalizar una decisión informada. Deloitte mejoró la independencia de la evaluación, pero no subsana insuficiencias informativas.',
-      consecuencia: 'omisión engañosa, hasta 4 % facturación UE o 2 M €.',
-      overall: {
-        color: 'Naranja',
-        recommendation: 'Se recomienda revisar y ajustar la información del claim para cubrir explícitamente todos los impactos prometidos y asegurar conformidad total con el alcance definido.',
-      },
-    },
-  },
-  {
-    id: 9,
-    url: 'https://www.repsol.com/es/sostenibilidad/index.cshtml',
-    claim: 'Energía universal cero emisiones netas',
-    categories: ['Claim sobre producto/empresa entera'],
-    relevant_laws: 'Anexo I 4 ter UCPD',
-    evidence_needed: 'Información específica sobre cómo se planea y se está logrando la producción y distribución de energía universal cero emisiones netas, con evidencia verificable.',
-    analysis: {
-      existence: {
-        result: 'Yes',
-        source: "Documento 'Grupo Repsol'",
-        explanation: 'El documento detalla la metodología y compromisos para alcanzar cero emisiones netas, incluyendo seguimiento de emisiones y planes específicos.',
-      },
-      sufficiency: {
-        result: 'Partial',
-        source: "Documento 'Grupo Repsol'",
-        explanation: 'La evidencia cubre metas de reducción y metodología, pero carece de detalles sobre neutralización de emisiones restantes y certificaciones específicas.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: "Documento 'Grupo Repsol'",
-        explanation: 'Los datos de emisiones y compromisos son de 2024, dentro de los 3 años previos al claim.',
-      },
-      independence: {
-        result: 'No consta',
-        source: "Documento 'Grupo Repsol'",
-        explanation: 'No se menciona auditor independiente; la validación parece interna según el informe de sostenibilidad.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Anexo I 4 quater UCPD',
-      razonamiento:
-        "El claim de 'cero emisiones netas' de Repsol está soportado por documentación interna que detalla metodología y compromisos, cumpliendo así con 'Existencia' según Art. 7 § 4 UCPD. Sin embargo, la falta de detalles sobre neutralización y certificaciones externas revelan una 'Suficiencia' parcial, en línea con la jurisprudencia *Dyson* TJUE C-632/16. Además, 'Independencia' muestra ausencia de auditoría externa, lo cual infringe Anexo I 4 quater UCPD al sugerir impacto neutro sin compensación rigurosa. La práctica es engañosa, aconsejando ajuste inmediato para evitar sanciones severas.",
-      consecuencia: 'Práctica engañosa, sanción hasta 4 % facturación UE o 2 M €',
-      overall: {
-        color: 'Rojo',
-        recommendation: 'Revisar el claim para establecer certificaciones externas y neutralización clara de emisiones restantes.',
-      },
-    },
-  },
-  {
-    id: 10,
-    url: 'https://www.repsol.com/es/sostenibilidad/index.cshtml',
-    claim: 'Economía circular del negocio de materiales de Repsol',
-    categories: ['Afirmación ambiental genérica'],
-    relevant_laws: 'Anexo I 4 bis UCPD',
-    evidence_needed: 'Ejemplos concretos y métricas de cómo el negocio de materiales de Repsol aplica principios de economía circular junto con evidencias y resultados auditables.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'El documento detalla objetivos de producción y acciones de economía circular con métricas específicas.',
-      },
-      sufficiency: {
-        result: 'Completa',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Cubre el alcance total, incluyendo objetivos específicos, avances y metodologías de economía circular.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'El documento es de 2024, y las metas reflejan datos y objetivos para ese y próximos años.',
-      },
-      independence: {
-        result: 'Interna',
-        source: 'No consta',
-        explanation: 'No se menciona certificación externa; herramienta interna supervisa objetivos de economía circular.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Anexo I 2 bis UCPD',
-      razonamiento:
-        'El claim corporativo evaluado cumple casi todos los requisitos de veracidad según la UCPD, basado en información verificable y actual del Informe de Gestión Integrado 2024. Sin embargo, falta independencia en la verificación, pues no consta certificación externa, infringiendo Anexo I 2 bis UCPD, que exige evaluación independiente para validar afirmaciones verdes. Este déficit pone en duda la fiabilidad del claim ante consumidores y autoridades.',
-      consecuencia: 'Práctica engañosa; sanción hasta 4% facturación UE o 2 M €.',
-      overall: {
-        color: 'Naranja',
-        recommendation: 'Corregir la falta de certificación externa para reducir el riesgo jurídico y fortalecer la credibilidad del claim.',
-      },
-    },
-  },
-  {
-    id: 11,
+    article_id: 3,
+    title: 'Repsol y el Cambio Climático',
     url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/index.cshtml',
-    claim: 'Aspiramos a convertirnos en una compañía cero emisiones netas en 2050.',
-    categories: ['Meta futura sin plan verificable', 'Neutralidad basada en compensación CO₂'],
-    relevant_laws: 'Anexo I 4 ter y Anexo I 4 quater UCPD',
-    evidence_needed: 'Plan de acción detallado, mecanismos de compensación, verificación independiente del progreso hacia la meta.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Resumen del año 2024',
-        explanation: 'Métricas y planes concretos para reducción de carbono hacia cero emisiones netas 2050, alineados con estándares internacionales.',
+    evaluation_summary:
+      'El texto presenta varias afirmaciones ambientales sobre metas futuras de reducción de emisiones de carbono y generación de electricidad renovable. Sin embargo, la falta de detalles específicos y verificables podría generar riesgos legales asociados con metas futuras no verificables y afirmaciones amplias sobre la generación de electricidad renovable. En el sector energético, la claridad y especificidad son esenciales para evitar confusiones sobre los compromisos ambientales.',
+    text_summary:
+      'El texto detalla los esfuerzos de Repsol por alcanzar la sostenibilidad, destacando un objetivo de cero emisiones netas para 2050, con metas intermedias de descarbonización. Incluye estrategias como la generación de electricidad renovable y el desarrollo de combustibles renovables, así como la captura y almacenamiento de carbono. También se menciona el establecimiento de un precio interno de carbono para nuevas inversiones y el compromiso con alianzas internacionales para fomentar la sostenibilidad.',
+    claims: [
+      {
+        claim_id: 9,
+        claim: 'Aspiramos a convertirnos en una compañía cero emisiones netas en 2050.',
+        categories: ['Meta futura sin plan verificable'],
+        relevant_laws: 'Art. 6 (2) d UCPD',
+        evidence_needed: 'Hoja de ruta detallada, hitos verificables, metodología para alcanzar cero emisiones netas.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'El claim se respalda con datos concretos como metas de reducción de emisiones y planes de transición energética alineados con el Acuerdo de París.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'La evidencia cubre los aspectos del claim, incluyendo metas intermedias para 2030 y un plan estratégico hacia 2050.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Los documentos presentan datos actualizados hasta 2024, dentro de tres años del claim hacia 2050.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'El proceso de revisión y certificación incluye la participación de una firma externa, Deloitte, para validar la estrategia de transición.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Ninguna',
+          razonamiento:
+            'El claim corporativo ha proporcionado pruebas claras, objetivas y verificables (Art. 7 §§ 4-5 UCPD) que son accesibles para el consumidor, lo que valida la existencia del claim. Además, la evidencia abarca de manera completa el alcance lingüístico del claim conforme a lo estipulado en el caso TJUE C-632/16 *Dyson*. Los datos son actuales y actualizados (Art. 7 § 2 b UCPD), reflejando veracidad y precisión respecto a las metas hacia 2030 y 2050. Finalmente, la independencia de la certificación se asegura mediante la participación de Deloitte, una entidad externa acreditada, cumpliendo con el Anexo I 2 bis UCPD. No se ha identificado ninguna infracción normativa.',
+          consecuencia: 'Ninguna práctica desleal identificada',
+          overall: {
+            color: 'Verde',
+            recommendation: 'No se requiere acción: el claim es sólido y cumple con todas las exigencias normativas.',
+          },
+        },
       },
-      sufficiency: {
-        result: 'Completa',
-        source: 'Resumen del año 2024',
-        explanation: 'El claim está respaldado por múltiples métricas y planes hacia cero emisiones netas, abarcando objetivos intermedios y finales.',
+      {
+        claim_id: 10,
+        claim: 'Para continuar avanzando con éxito en este objetivo nos fijamos metas intermedias de descarbonización a 2025, 2030 y 2040.',
+        categories: [],
+        relevant_laws: '',
+        evidence_needed: 'Detalles sobre qué constituyen las metas intermedias, KPI específicos y métodos de medición.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'El claim se respalda con un plan de transición aprobado en 2024, que incluye metas concretas y metodologías para descarbonización a corto y largo plazo.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'El plan de transición cubre metas específicas de reducción de emisiones y descarbonización a 2025, 2030, y 2040 con contexto y métricas claras.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'La información más reciente es de 2024, dentro de los tres años anteriores al claim.',
+          },
+          independence: {
+            result: 'Independiente',
+            explanation: 'La verificación ISO 14064 y asesoramiento de Deloitte aseguran independencia en evaluación.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Ninguna norma infringida',
+          razonamiento:
+            'El análisis de evidencia confirma la existencia de pruebas verificables y actualizadas, conforme al Art. 7 § 2 b UCPD, provenientes de un plan de transición ratificado y una verificación externa por parte de Deloitte con certificación ISO 14064. Según el TJUE en C-632/16, el claim refleja fielmente los compromisos anunciados y metas verificables, cumpliendo así con los requisitos de independencia exigidos en la normativa y propuesta Green-Claims. Por ello, el claim corporativo es legítimo acorde a los requisitos legales vigentes.',
+          consecuencia: 'No existen indicios de prácticas desleales; el claim cumple con las exigencias legales de transparencia y veracidad.',
+          overall: {
+            color: 'Verde',
+            recommendation: 'Continuar implementación del plan y actualizar según los avances tecnológicos y científicos para mantener siempre la veracidad del claim.',
+          },
+        },
       },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La estrategia y métricas están actualizadas hasta 2024 con proyecciones detalladas hacia 2050.',
+      {
+        claim_id: 11,
+        claim: 'Generación electricidad renovable',
+        categories: ['Claim sobre producto/empresa entera'],
+        relevant_laws: 'Anexo I 4 ter UCPD',
+        evidence_needed: 'Detalle sobre el porcentaje de generación eléctrica que es realmente renovable.',
+        analysis: {
+          existence: {
+            result: 'Sí',
+            explanation: 'La documentación menciona actividades de generación de electricidad solar, eólica e hidráulica y proyectos asociados.',
+          },
+          sufficiency: {
+            result: 'Completa',
+            explanation: 'La evidencia detalla la proporción de electricidad generada por fuentes renovables respecto al total.',
+          },
+          actuality: {
+            result: 'Actual',
+            explanation: 'Información y datos presentados son de 2024, dentro del límite de 3 años para asegurar actualidad.',
+          },
+          independence: {
+            result: 'No consta',
+            explanation: 'La documentación no menciona verificación o auditoría externa específica para generación renovable.',
+          },
+        },
+        legal_reasoning: {
+          norma_infringida: 'Anexo I 4 ter UCPD',
+          razonamiento:
+            'La afirmación sobre generación de electricidad mediante fuentes renovables está respaldada por documentación existente, detallando la proporción respecto al total, conforme al Art. 7 UCPD. Sin embargo, la falta de verificación externa especificada representa una infracción crítica bajo Anexo I 4 ter, donde las afirmaciones sobre la totalidad de la empresa requieren preferencia de auditoría independiente. Las características de generación deben ser evaluadas externamente para evitar un fallo crítico de independencia.',
+          consecuencia: 'Práctica engañosa por insuficiencia de auditoría externa, sanción de hasta 4 % de la facturación UE o 2 M €.',
+          overall: {
+            color: 'Rojo',
+            recommendation: 'Corregir la falta de verificación externa para evitar sanciones.',
+          },
+        },
       },
-      independence: {
-        result: 'Independiente',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Repsol cuenta con certificación externa ISO 14064 y alineación con el IPCC para validación de datos de emisiones.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: '',
-      razonamiento:
-        'El claim corporativo de Repsol sobre la reducción de carbono hacia cero emisiones netas cumple con los requisitos de la Directiva 2005/29/CE, según lo evaluado en los sub-tests. La existencia del claim está respaldada por métricas concretas y planes objetivamente verificables, de acuerdo con el Art. 7 § 4 UCPD. Además, la suficiencia está conformada por un respaldo múltiple de métricas que abordan objetivos a corto y largo plazo, en línea con el fallo Dyson C-632/16. La actualidad y la independencia se reflejan en datos verificados externamente hasta 2024, cumpliendo con Art. 7 § 2b UCPD y estándares de certificación independientes. Todo ello indica un riesgo nulo de greenwashing.',
-      consecuencia: 'práctica engañosa',
-      overall: {
-        color: 'Verde',
-        recommendation:
-          'Continuar con las prácticas actuales y asegurar la continuidad del rigor y transparencia en la verificación de claims medioambientales para mantener el nivel de cumplimiento legal.',
-      },
-    },
-  },
-  {
-    id: 12,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/index.cshtml',
-    claim:
-      'Trabajamos cada día en la lucha contra el cambio climático, sumándonos activamente a iniciativas y asociaciones internacionales de la industria del sector energético encaminadas al despliegue de los principios de sostenibilidad.',
-    categories: ['Claim sobre producto/empresa entera'],
-    relevant_laws: 'Anexo I 4 ter UCPD',
-    evidence_needed: 'Documentación sobre iniciativas, asociaciones y resultados concretos alcanzados en términos de emisiones y mejora ambiental.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La documentación de Repsol proporciona informes de sus esfuerzos y participación en iniciativas de descarbonización y sostenibilidad.',
-      },
-      sufficiency: {
-        result: 'Parcial',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La evidencia menciona varias iniciativas, pero no cubre completamente el compromiso con todas las asociaciones internacionales relevantes del sector energético.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La información es de 2024, dentro del límite de actualización de 3 años exigido.',
-      },
-      independence: {
-        result: 'No consta',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'No se menciona un certificador externo acreditado para verificar las acciones o claims de la compañía.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Art. 7 §§ 4-5 UCPD y Anexo I 2 bis UCPD',
-      razonamiento:
-        'El análisis evidencia que, aunque Repsol presenta pruebas de esfuerzos e iniciativas en descarbonización, la suficiencia es meramente parcial según el TJUE en C-632/16 *Dyson*, ya que no se cubren todas las asociaciones internacionales pertinentes. Además, la falta de un certificador externo infringe el Anexo I 2 bis, que exige que los distintivos de sostenibilidad se basen en un sistema de certificación acreditado. Esto resulta en una omisión engañosa bajo la normativa de la UCPD.',
-      consecuencia: 'omisión engañosa, sanción de hasta 4 % facturación UE o 2 M €',
-      overall: {
-        color: 'Rojo',
-        recommendation: 'Repsol debe obtener una certificación externa acreditada para sus claims y ampliar la cobertura de sus pruebas para cumplir integralmente con la normativa.',
-      },
-    },
-  },
-  {
-    id: 13,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/index.cshtml',
-    claim: 'Generación electricidad renovable.',
-    categories: ['Afirmación ambiental genérica'],
-    relevant_laws: 'Anexo I 4 bis UCPD',
-    evidence_needed: 'Datos específicos y verificables sobre generación de energía renovable, certificaciones, auditorías.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Indicadores económicos, Informe de Gestión Integrado 2024',
-        explanation: 'Se mencionan actividades de generación de electricidad mediante tecnología solar, eólica e hidráulica.',
-      },
-      sufficiency: {
-        result: 'Completa',
-        source: 'Indicadores económicos, Informe de Gestión Integrado 2024',
-        explanation: 'Se describe la generación renovable en solar, eólica, hidráulica y sus proporciones respecto al total de energía.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Datos sobre generación renovable son del año 2024, dentro del periodo pertinente (≤ 3 años).',
-      },
-      independence: {
-        result: 'No consta',
-        source: 'Anexos, Informe de Gestión Integrado 2024',
-        explanation: 'No se menciona certificación externa específica, solo que las métricas de emisiones siguen directrices estándar.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Anexo I 2 bis UCPD',
-      razonamiento:
-        'El análisis revela que, aunque la empresa proporciona información sobre su generación de electricidad a partir de fuentes renovables, falta evidencia de verificación independiente por un certificador externo. Según el Anexo I 2 bis de la Directiva UCPD, una afirmación ambiental debe basarse en un sistema de certificación reconocido. La ausencia de dicho sistema sugiere una posible infracción, ya que la mera adhesión a directrices estándar no satisface el criterio de independencia requerido.',
-      consecuencia: 'práctica engañosa, sanción de hasta 4 % de la facturación UE o 2 M €',
-      overall: {
-        color: 'Rojo',
-        recommendation: 'Recomendamos la inmediata verificación externa independiente para subsanar el riesgo de greenwashing.',
-      },
-    },
-  },
-  {
-    id: 14,
-    url: 'https://www.repsol.com/es/sostenibilidad/ejes-sostenibilidad/cambio-climatico/index.cshtml',
-    claim: 'Comienzo de la producción de combustibles 100% renovables en la nueva planta de Cartagena.',
-    categories: [],
-    relevant_laws: '',
-    evidence_needed: 'Certificación de la producción de combustibles 100% renovables por organismos independientes, auditorías de procesos y productos.',
-    analysis: {
-      existence: {
-        result: 'Sí',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'La planta en Cartagena fue inaugurada en 2024 para producir combustibles 100% renovables, documentado en el informe Repsol.',
-      },
-      sufficiency: {
-        result: 'Completa',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Documentación describe inicio concreto, capacidad de producción y utilización de residuos para combustibles renovables.',
-      },
-      actuality: {
-        result: 'Actual',
-        source: 'Informe de Gestión Integrado 2024',
-        explanation: 'Documentación de 2024 coincide con el claim del inicio de producción de combustibles renovables en Cartagena.',
-      },
-      independence: {
-        result: 'No consta',
-        source: 'N/A',
-        explanation: 'No menciona verificadores externos o certificación acerca del claim de producción de combustibles renovables.',
-      },
-    },
-    legal_reasoning: {
-      norma_infringida: 'Anexo I 2 bis UCPD',
-      razonamiento:
-        'El análisis evidencia que, aunque la planta en Cartagena está produciendo combustibles renovables y la documentación es actual y suficiente (Informe de Gestión Integrado 2024), no se cumple con el criterio de independencia. Según el Anexo I 2 bis UCPD, para evitar el riesgo de greenwashing, el claim requiere certificación de un verificador externo acreditado. Al no constar tal verificación, podría interpretarse que el claim es engañoso, infringiendo normas que garantizan transparencia y objetividad en las afirmaciones ambientales.',
-      consecuencia: 'omisión engañosa; sanción hasta 4 % facturación UE o 2 M €',
-      overall: {
-        color: 'Rojo',
-        recommendation: 'Se recomienda obtener una certificación externa acreditada para el claim a fin de cumplir con las normativas sobre la verificación independiente.',
-      },
-    },
+    ],
   },
 ]

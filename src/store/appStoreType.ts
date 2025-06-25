@@ -1,14 +1,14 @@
-import type { ClaimCards } from '@/types/compTypes'
+import type { ArticleCard, ClaimCards } from '@/types/compTypes'
 
 export type AppStore = {
   init: boolean
   claimCards: ClaimCards[]
-  urlList: string[] | null
+  articleList: ArticleCard[] | null
   cardSelected: number | null
-  urlSelected: string | null
+  articleSelected: number | null
   searchQuery: string
   setSearchQuery: (query: string) => void
-  initDataApp: (data: Partial<AppStore>) => void
+  initDataApp: (data: ArticleCard[]) => void
   selectCard: (id: number | null) => void
-  selectUrl: (url: string | null) => void
+  selectArticle: (id: number | null) => void
 }

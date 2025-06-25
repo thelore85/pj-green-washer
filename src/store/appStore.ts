@@ -8,16 +8,16 @@ export const useStore = create<AppStore>()(
       // Data Store
       init: false,
       cardSelected: null,
-      urlSelected: null,
+      articleSelected: null,
       claimCards: [],
-      urlList: [],
+      articleList: [],
       searchQuery: '',
 
       // Actions
       setSearchQuery: (query) => set({ searchQuery: query }),
-      initDataApp: (data) => set({ ...data, init: true }),
+      initDataApp: (data) => set({ articleList: data, init: true }),
       selectCard: (id) => set({ cardSelected: id }),
-      selectUrl: (url) => set({ urlSelected: url }),
+      selectArticle: (id) => set({ articleSelected: id }),
     }),
     {
       name: 'appStorage',

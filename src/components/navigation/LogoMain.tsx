@@ -2,7 +2,7 @@ import logo from '@/assets/logos/logo_full_white_bg.jpeg'
 import { useStore } from '@/store/appStore'
 
 export default function LogoMain() {
-  const resetUrlSelection = useStore((store) => store.selectUrl)
+  const resetUrlSelection = useStore((store) => store.selectArticle)
 
   const handleLogoClick = () => {
     resetUrlSelection(null)

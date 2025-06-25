@@ -1,12 +1,13 @@
-import type { ClaimCards } from '@/types/compTypes'
+import type { TClaimCard } from '@/types/compTypes'
 
 type ClaimCardProps = {
-  card: ClaimCards
-  setSelectedClaim: (card: ClaimCards) => void
+  card: TClaimCard
+  setSelectedClaim: (card: TClaimCard) => void
 }
 
 export default function ClaimCard({ card, setSelectedClaim }: ClaimCardProps) {
   const status = card.legal_reasoning.overall.color
+  const claimCategory = card.categories
 
   return (
     <div className="mx-auto mb-6 w-full cursor-pointer rounded-2xl bg-gray-100 shadow-md transition-transform hover:scale-[1.01]" onClick={() => setSelectedClaim(card)}>
@@ -23,7 +24,11 @@ export default function ClaimCard({ card, setSelectedClaim }: ClaimCardProps) {
           <h1 className="text-foreground mb-2 text-lg leading-snug font-bold">
             {card.claim?.slice(0, 100)} {card.claim.length > 100 && '...'}
           </h1>
-          <p className="text-muted-foreground truncate text-sm font-light">{card.url}</p>
+          {claimCategory?.map((category) => (
+            <span key={category} className="me-2 truncate text-xs font-light text-gray-400 italic">
+              {category}
+            </span>
+          ))}
         </div>
       </div>
     </div>

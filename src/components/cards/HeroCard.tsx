@@ -3,7 +3,7 @@ import Button from '../cta/Buttons'
 import { CheckCircle } from 'lucide-react'
 
 export default function BackupCard() {
-  const cardSelected = useStore((state) => state.urlSelected)
+  const cardSelected = useStore((state) => state.articleSelected)
 
   const greenWasherBullets = [
     'Analyze your brand’s sustainability claims for regulatory compliance',

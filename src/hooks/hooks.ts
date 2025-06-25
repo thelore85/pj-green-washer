@@ -8,15 +8,13 @@ export const useInitApp = () => {
   const initDataApp = useStore((store) => store.initDataApp)
 
   // Obj definition
-  const claimCards = CLAIM_CARD_DB
-  const urlList = [...new Set(claimCards.map((claim) => claim.url))]
-  const initObj = { claimCards, urlList }
+  const articleList = CLAIM_CARD_DB
 
   useEffect(() => {
     const appInitialization = () => {
       if (!init) {
         setTimeout(() => {
-          initDataApp(initObj)
+          initDataApp(articleList)
         }, 2000)
       }
     }
