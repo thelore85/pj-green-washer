@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Progress } from '@/components/ui/progress'
+import LogoMain from '../navigation/LogoMain'
 
 export default function Loader() {
   // Utility
@@ -8,8 +9,8 @@ export default function Loader() {
 
   useEffect(() => {
     const timer1 = setTimeout(() => setProgress(40), 1000)
-    const timer2 = setTimeout(() => setProgress(70), 2000)
-    const timer3 = setTimeout(() => setProgress(100), 2300)
+    const timer2 = setTimeout(() => setProgress(70), 3000)
+    const timer3 = setTimeout(() => setProgress(100), 4300)
 
     return () => {
       clearTimeout(timer1)
@@ -21,9 +22,11 @@ export default function Loader() {
   return (
     <div className="bg-primary flex h-dvh items-center">
       <div className="m-auto text-center">
-        <div className="mb-3">
-          <h1 className="text-4xl font-bold tracking-tight text-white">MASKA</h1>
-          <p className="text-center text-xs font-light tracking-tight text-white">Green Impact Metrics.</p>
+        <div className="m-auto mb-4 max-w-[350px] text-center">
+          <LogoMain />
+        </div>
+        <div className="m-auto mb-10 w-full">
+          <p className="text-md m-auto w-full text-center font-light tracking-widest text-white">Measure your green communication impact.</p>
         </div>
         <Progress value={progress} />
       </div>

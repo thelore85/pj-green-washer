@@ -4,6 +4,7 @@ import { CheckCircle } from 'lucide-react'
 
 export default function BackupCard() {
   const cardSelected = useStore((state) => state.articleSelected)
+  const restartApp = useStore((state) => state.restartApp)
 
   const greenWasherBullets = [
     'Analyze your brand’s sustainability claims for regulatory compliance',
@@ -11,6 +12,10 @@ export default function BackupCard() {
     'Get actionable insights to improve transparency and credibility',
     'Ensure alignment with EU Green Claims Directive and ESG standards',
   ]
+
+  const handleStartClick = () => {
+    restartApp()
+  }
 
   if (!cardSelected) {
     return (
@@ -28,7 +33,9 @@ export default function BackupCard() {
             ))}
           </ul>
 
-          <Button variant="primary">Start Now</Button>
+          <Button variant="primary" onClick={handleStartClick}>
+            Comienza Nueva Analisis
+          </Button>
         </div>
       </div>
     )

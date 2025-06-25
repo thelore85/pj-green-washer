@@ -15,7 +15,7 @@ export const useInitApp = () => {
       if (!init) {
         setTimeout(() => {
           initDataApp(articleList)
-        }, 2000)
+        }, 5000)
       }
     }
     appInitialization()

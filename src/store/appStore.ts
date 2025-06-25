@@ -16,6 +16,7 @@ export const useStore = create<AppStore>()(
       // Actions
       setSearchQuery: (query) => set({ searchQuery: query }),
       initDataApp: (data) => set({ articleList: data, init: true }),
+      restartApp: () => set({ init: false, cardSelected: null, articleSelected: null, claimCards: [], articleList: [], searchQuery: '' }),
       selectCard: (id) => set({ cardSelected: id }),
       selectArticle: (id) => set({ articleSelected: id }),
     }),
