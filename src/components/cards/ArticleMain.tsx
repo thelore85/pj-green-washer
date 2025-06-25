@@ -1,7 +1,7 @@
 import { useStore } from '@/store/appStore'
 import type { TClaimCard } from '@/types/compTypes'
 import ClaimCard from './ClaimCard'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ClaimDetailsModal from './ClaimDetailsModal'
 
 export default function ArticleMain() {
@@ -12,6 +12,25 @@ export default function ArticleMain() {
   // state
   const [selectedClaim, setSelectedClaim] = useState<null | TClaimCard>(null)
   const article = articleList?.find((article) => article.article_id === articleSelected)
+
+  const [low, setLow] = useState(0)
+  const [middle, setMiddle] = useState(0)
+  const [high, setHigh] = useState(0)
+
+  useEffect(() => {
+    if (!article) return
+
+    setLow(0)
+    setMiddle(0)
+    setHigh(0)
+
+    article.claims.forEach((claim) => {
+      const color = claim.legal_reasoning.overall.color
+      if (color === 'Rojo') setHigh((prev) => prev + 1)
+      if (color === 'Naranja') setMiddle((prev) => prev + 1)
+      if (color === 'Verde') setLow((prev) => prev + 1)
+    })
+  }, [article])
 
   if (article)
     return (
@@ -40,17 +59,17 @@ export default function ArticleMain() {
               {/* Risk lable  */}
               <div className="flex items-center">
                 <div className="me-3 h-4 w-4 rounded-full bg-red-600"></div>
-                <span>Alto - 10</span>
+                <span>Alto - {high}</span>
               </div>
               {/* Risk lable  */}
               <div className="flex items-center">
                 <div className="me-3 h-4 w-4 rounded-full bg-orange-400"></div>
-                <span>Medio - 10</span>
+                <span>Medio - {middle}</span>
               </div>
               {/* Risk lable  */}
               <div className="flex items-center">
                 <div className="me-3 h-4 w-4 rounded-full bg-green-600"></div>
-                <span>Bajo - 10</span>
+                <span>Bajo - {low}</span>
               </div>
             </div>
           </div>
