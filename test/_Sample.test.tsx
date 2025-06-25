@@ -1,3 +1,18 @@
+/////////////////////////////////////////////
+/////// BOILER PLATE
+/////////////////////////////////////////////
+
+// screen.debug(); Place it inside the it() fn to print html component in the terminal
+// screen.getByTestId('comp-id'); select a component element eg: const element = screen....
+
+// expect(element).toBeInDocument();  check in 'element' is rendered. element must be selected before; Remeber to ad a prop 'data-testid' to the component element
+
+// "test": "vitest",
+
+// "coverage": "vitest run --coverage",
+
+// "test-file": "vitest src/components/8TDD/Post.test.tsx"
+
 describe('Post component test suite', () => {
   it('should render component', () => {})
 
