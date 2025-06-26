@@ -46,7 +46,7 @@ export default function ArticleMain() {
             </div>
             <div className="mb-4">
               <h3 className="mb-2 border-b-1 border-gray-200 text-lg font-bold">Url</h3>
-              <a href={article?.url} target="_blank" className="text-gray-300 italic">
+              <a href={article?.url} target="_blank" className="hover:text-primary text-gray-300 italic">
                 {article?.url}
               </a>
             </div>
