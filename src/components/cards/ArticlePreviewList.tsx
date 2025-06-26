@@ -6,7 +6,7 @@ export default function ArticlePreviewList() {
 
   return (
     <div className="h-full overflow-auto p-4">
-      <h2 className="mb-5 text-center font-bold tracking-tight">Articulos Analizado</h2>
+      {articleList?.length !== 0 && <h2 className="mb-5 text-center font-bold tracking-tight">Articulos Analizado</h2>}
       {articleList?.map((article) => {
         return <ArticlePreviewCard key={article.article_id} article={article} />
       })}
