@@ -3,9 +3,11 @@ import { useStore } from '@/store/appStore'
 
 export default function LogoMain() {
   const resetUrlSelection = useStore((store) => store.selectArticle)
+  const resetArticleList = useStore((store) => store.resetArticleList)
 
   const handleLogoClick = () => {
     resetUrlSelection(null)
+    resetArticleList()
   }
 
   return (

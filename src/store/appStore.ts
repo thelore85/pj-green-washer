@@ -7,7 +7,7 @@ export const useStore = create<AppStore>()(
     persist(
       (set) => ({
         // Data Store
-        init: false,
+        init: true,
         cardSelected: null,
         articleSelected: null,
         claimCards: [],
@@ -19,6 +19,7 @@ export const useStore = create<AppStore>()(
         initDataApp: (data) => set({ articleList: data, init: true }),
         restartApp: () => set({ init: false, cardSelected: null, articleSelected: null, claimCards: [], articleList: [], searchQuery: '' }),
         selectCard: (id) => set({ cardSelected: id }),
+        resetArticleList: () => set({ articleList: [] }),
         selectArticle: (id) => set({ articleSelected: id }),
       }),
       {

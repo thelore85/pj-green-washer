@@ -1,10 +1,15 @@
 import { useStore } from '@/store/appStore'
 import Button from '../cta/Buttons'
 import { CheckCircle } from 'lucide-react'
+import { CLAIM_CARD_DB } from '@/lib/db'
 
 export default function BackupCard() {
   const cardSelected = useStore((state) => state.articleSelected)
-  const restartApp = useStore((state) => state.restartApp)
+  const initDataApp = useStore((state) => state.initDataApp)
+  const restartApp = useStore((store) => store.restartApp)
+
+  const articleList = CLAIM_CARD_DB
+  // const restartApp = useStore((state) => state.restartApp)
 
   const greenWasherBullets = [
     'Analyze your brand’s sustainability claims for regulatory compliance',
@@ -15,6 +20,9 @@ export default function BackupCard() {
 
   const handleStartClick = () => {
     restartApp()
+    setTimeout(() => {
+      initDataApp(articleList)
+    }, 5000)
   }
 
   if (!cardSelected) {

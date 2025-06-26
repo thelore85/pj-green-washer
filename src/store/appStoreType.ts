@@ -8,6 +8,7 @@ export type AppStore = {
   articleSelected: number | null
   searchQuery: string
   setSearchQuery: (query: string) => void
+  resetArticleList: () => void
   restartApp: () => void
   initDataApp: (data: ArticleCard[]) => void
   selectCard: (id: number | null) => void
