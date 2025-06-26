@@ -1,5 +1,5 @@
 import LogoMain from '../navigation/LogoMain'
-import ButtonSetting from '../cta/ButtonSetting'
+// import ButtonSetting from '../cta/ButtonSetting'
 import ArticlePreviewList from './ArticlePreviewList'
 import { useStore } from '@/store/appStore'
 
@@ -23,9 +23,9 @@ export default function SidebarCards() {
       {/* Sidebar Body  */}
       <ArticlePreviewList />
       {/* Sidebar Footer  */}
-      <div className="mx-4 border-t-1 border-gray-100 py-4">
+      {/* <div className="mx-4 border-t-1 border-gray-100 py-4">
         <ButtonSetting label="Settings" />
-      </div>
+      </div> */}
     </aside>
   )
 }
