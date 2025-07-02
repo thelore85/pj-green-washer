@@ -9,24 +9,24 @@ type ClaimDetailsProps = {
 
 export default function ClaimDetailsModal({ card, isOpen, setIsOpen }: ClaimDetailsProps) {
   return (
-    <Modal open={isOpen} onOpenChange={() => setIsOpen(null)} title="Claim Details">
+    <Modal open={isOpen} onOpenChange={() => setIsOpen(null)} title="Detalles de la Afirmación">
       <div className="text-md text-gray-700">
         <div className="mt-4 mb-4 border-b">
           <div className="mb-2 text-2xl font-bold tracking-tight">{card?.claim}</div>
 
           <div className="mb-2">
-            <strong>Categories:</strong> {card?.categories.join(', ')}
+            <strong>Categorías:</strong> {card?.categories.join(', ')}
           </div>
           <div className="mb-2">
-            <strong>Relevant Laws:</strong> {card?.relevant_laws}
+            <strong>Ley aplicable:</strong> {card?.relevant_laws}
           </div>
           <div className="mb-2">
-            <strong>Evidence Needed:</strong> {card?.evidence_needed}
+            <strong>Evidencia necesaria:</strong> {card?.evidence_needed}
           </div>
         </div>
 
         <div className="mt-4 mb-4 border-b">
-          <h3 className="mb-2 text-2xl font-semibold">Legal Reasoning</h3>
+          <h3 className="mb-2 text-2xl font-semibold">Análisis jurídico</h3>
           <div className="mb-2">
             <strong>Norma Infringida:</strong> {card?.legal_reasoning.norma_infringida || 'N/A'}
           </div>
@@ -37,7 +37,7 @@ export default function ClaimDetailsModal({ card, isOpen, setIsOpen }: ClaimDeta
             <strong>Consecuencia:</strong> {card?.legal_reasoning.consecuencia}
           </div>
           <div className="mb-2">
-            <strong>Recommendation:</strong>
+            <strong>Recomendación: </strong>
             {card?.legal_reasoning.overall.recommendation}
           </div>
         </div>
