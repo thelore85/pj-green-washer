@@ -5,7 +5,7 @@ import FooterApp from '../FooterApp'
 describe('Navigation section test', () => {
   it('Render NavMain with correct title', () => {
     render(<NavMain />)
-    expect(screen.getByText('Green Impact Metrics')).toBeInTheDocument()
+    expect(screen.getByText('GreenTrust Check')).toBeInTheDocument()
   })
   it('Render Footer component', () => {
     render(<FooterApp />)

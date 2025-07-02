@@ -26,7 +26,7 @@ export default function Loader() {
           <LogoMain />
         </div>
         <div className="m-auto mb-10 w-full">
-          <p className="text-md m-auto w-full text-center font-light tracking-widest text-white">Measure your green communication impact.</p>
+          <p className="text-md m-auto w-full text-center font-light tracking-widest text-white">Verifica promesas verdes y evita riesgos legales</p>
         </div>
         <Progress value={progress} />
       </div>
