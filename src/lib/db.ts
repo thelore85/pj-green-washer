@@ -964,49 +964,5 @@ export const CLAIM_CARD_DB = [
           }
         }
       ]
-    },
-    {
-      article_id: 9,
-      url: "https://www.repsol.es/particulares/vehiculos/carburantes/diesel-nexa/",
-      title: "Promoción Diesel Nexa 100% Renovable",
-      text_summary: "El texto promociona el combustible Diesel Nexa de Repsol, destacando su origen 100% renovable y beneficios para motores diésel.",
-      claims: [
-        {
-          claim_id: 26,
-          claim: "Diesel Nexa 100% renovable",
-          categories: [
-            "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
-          ],
-          relevant_laws: "Artículo 4 ter del Anexo I de la Dir. 2005/29/CE",
-          evidence_needed: "Se requiere evidencia de que el combustibles es totalmente renovable en todas sus etapas de producción, distribución y consumo, o documentación que precise a qué aspectos o componentes del producto se refiere.",
-          analysis: {
-            existence: {
-              "result": "Sí",
-              "explanation": "Repsol ha presentado múltiples informes y documentos que mencionan el diésel Nexa 100% renovable."
-            },
-            sufficiency: {
-              "result": "Insuficiente",
-              "explanation": "La evidencia presentada no demuestra que el comportamiento medioambiental excelente reconocido con base en el ciclo de vida propio cumpla para el diésel 100% renovable."
-            },
-            actuality: {
-              "result": "Actual",
-              "explanation": "Los documentos presentados corresponden al año 2024, lo cual es reciente y dentro del rango de ≤3 años."
-            },
-            independence: {
-              "result": "No Aplica",
-              "explanation": "La independencia no es aplicable para el claim de combustible 100% renovable según la guía de suficiencia."
-            }
-          },
-          legal_reasoning: {
-            norma_infringida: "Art. 4 bis Anexo I",
-            razonamiento: "La afirmación de Repsol sobre su diésel Nexa 100% renovable sugiere un comportamiento medioambiental excelente. Sin embargo, el test de suficiencia ha arrojado un resultado de \"Insuficiente\", indicando que la evidencia presentada no cumple los requisitos para demostrar dicho comportamiento a lo largo de su ciclo de vida. Según el Art. 4 bis del Anexo I, una afirmación medioambiental genérica está prohibida si no se puede demostrar un comportamiento medioambiental excelente reconocido, lo que es el caso aquí.",
-            consecuencia: "lista negra / práctica engañosa / omisión engañosa; sanción máx. 4 % facturación UE o 2 M €",
-            overall: {
-              color: "Rojo",
-              recommendation: "Recomiendo retirar el claim o proporcionar evidencia que cumpla con la demostración de un comportamiento medioambiental excelente reconocido."
-            }
-          }
-        }
-      ]
     }
   ]
