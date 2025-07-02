@@ -44,7 +44,7 @@ export type ArticleCard = {
   article_id: number
   title: string
   url: string
-  evaluation_summary: string
+  // evaluation_summary: string
   text_summary: string
   claims: TClaimCard[]
 }
