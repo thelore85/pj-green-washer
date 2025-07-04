@@ -576,12 +576,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Art. 4 ter del Anexo I",
+            norma_infringida: "Ninguna norma infringida",
             razonamiento: "El claim revisado afirma la totalidad del producto como elaborado con combustible HVO 100% renovable. El análisis demuestra existencia, suficiencia y actualidad de pruebas que respaldan dicha afirmación, cumpliendo la norma EN 15940. Además, la categoría no exige verificación externa, haciendo que el riesgo de greenwashing sea bajo. Por tanto, no hay infracción del Artículo 4 ter del Anexo I, que demanda pruebas de cobertura plena sobre toda la afirmación.",
-            consecuencia: "lista negra / práctica engañosa / omisión engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            consecuencia: "No hay infracción; no se requiere sanción",
             overall: {
               color: "Verde",
-              recommendation: "Recomendación legal: afirmar siempre con cobertura plena y evidencias actualizadas."
+              recommendation: "Recomendación legal: Mantener siempre con cobertura plena y evidencias actualizadas."
             }
           }
         },
