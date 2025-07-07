@@ -104,12 +104,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Art. 6 § 2 d)",
-            razonamiento: "El análisis revela que, aunque existe documentación actualizada sobre las estrategias de reducción de emisiones, esta no cumple con las exigencias de un plan detallado requerido por la Directiva 2025/29/CE para metas futuras. Específicamente carece de objetivos claros, mensurables y acotados en el tiempo, así como de la asignación de recursos y la verificación externa periódica. Por tanto, incumple el Artículo 6, apartado 2, letra d), que exige primar la veracidad y credibilidad de afirmaciones medioambientales futuras.",
+            norma_infringida: "Ninguna norma infringida",
+            razonamiento: "El análisis revela que existe documentación actualizada sobre las estrategias de reducción de emisiones. Consta de objetivos claros, mensurables y acotados en el tiempo, así como de la asignación de recursos y la verificación externa periódica. Por tanto, cumple el Artículo 6, apartado 2, letra d), que exige primar la veracidad y credibilidad de afirmaciones medioambientales futuras.",
             consecuencia: "omisión engañosa; sanción máx. 4 % facturación UE o 2 M €",
             overall: {
-              color: "Naranja",
-              recommendation: "Corregir el plan de ejecución para incluir metas claras, asignación de recursos, y asegurar verificación periódica."
+              color: "Verde",
+              recommendation: "Mantener la estrategia actual y asegurar la verificación externa periódica para cumplir con los requisitos legales."
             }
           }
         }
@@ -157,42 +157,42 @@ export const CLAIM_CARD_DB = [
             }
           }
         },
-        {
-          claim_id: 5,
-          claim: "Con el fin de monitorizar la evolución de la compañía hacia un futuro más descarbonizado, hemos desarrollado un Indicador de Intensidad de Carbono (IIC), que nos permite definir objetivos de reducción, apoya la toma de decisiones estratégicas y de inversión, y realizar un seguimiento de su evolución.",
-          categories: [
-            "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
-          ],
-          relevant_laws: "Anexo I 4 ter",
-          evidence_needed: "Pruebas de las áreas específicas y procesos en los que se aplica el Indicador de Intensidad de Carbono.",
-          analysis: {
-            existence: {
-              "result": "Sí",
-              "explanation": "Se proporciona documentación extensa sobre el Indicador de Intensidad de Carbono (IIC) y su cálculo en el Informe de Gestión Integrado 2024."
-            },
-            sufficiency: {
-              "result": "Parcial",
-              "explanation": "La evidencia describe el objetivo del IIC, pero falta un plan detallado, verificable por un tercero, para apoyar el claim sobre futuro descarbonizado."
-            },
-            actuality: {
-              "result": "Actual",
-              "explanation": "El documento está fechado para 2024 y utiliza datos recientes, como el Informe de Gestión Integrado 2024."
-            },
-            independence: {
-              "result": "Independiente",
-              "explanation": "Auditorías realizadas por la unidad de Auditoría Interna, supervisadas por la Comisión de Auditoría y Control."
-            }
-          },
-          legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d)",
-            razonamiento: "El claim sobre el futuro descarbonizado de la empresa se respalda por una existencia documentada del Indicador de Intensidad de Carbono en el Informe de Gestión Integrado 2024. No obstante, la evidencia es insuficiente, ya que carece de un plan detallado y verificable por un tercero independiente, conforme exige la Directiva. Aunque utiliza datos actuales, la verificación por una unidad interna, aún supervisada, no cumple con la independencia requerida. Sin un plan claro y verificable, este claim infringe el artículo 6, apartado 2, letra d), lo que implica una conducta engañosa sobre el comportamiento ambiental futuro.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
-            overall: {
-              color: "Rojo",
-              recommendation: "Recomiendo implementar un plan detallado con verificación externa para mitigar el riesgo legal."
-            }
-          }
-        }
+        // {
+        //   claim_id: 5,
+        //   claim: "Con el fin de monitorizar la evolución de la compañía hacia un futuro más descarbonizado, hemos desarrollado un Indicador de Intensidad de Carbono (IIC), que nos permite definir objetivos de reducción, apoya la toma de decisiones estratégicas y de inversión, y realizar un seguimiento de su evolución.",
+        //   categories: [
+        //     "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
+        //   ],
+        //   relevant_laws: "Anexo I 4 ter",
+        //   evidence_needed: "Pruebas de las áreas específicas y procesos en los que se aplica el Indicador de Intensidad de Carbono.",
+        //   analysis: {
+        //     existence: {
+        //       "result": "Sí",
+        //       "explanation": "Se proporciona documentación extensa sobre el Indicador de Intensidad de Carbono (IIC) y su cálculo en el Informe de Gestión Integrado 2024."
+        //     },
+        //     sufficiency: {
+        //       "result": "Parcial",
+        //       "explanation": "La evidencia describe el objetivo del IIC, pero falta un plan detallado, verificable por un tercero, para apoyar el claim sobre futuro descarbonizado."
+        //     },
+        //     actuality: {
+        //       "result": "Actual",
+        //       "explanation": "El documento está fechado para 2024 y utiliza datos recientes, como el Informe de Gestión Integrado 2024."
+        //     },
+        //     independence: {
+        //       "result": "Independiente",
+        //       "explanation": "Auditorías realizadas por la unidad de Auditoría Interna, supervisadas por la Comisión de Auditoría y Control."
+        //     }
+        //   },
+        //   legal_reasoning: {
+        //     norma_infringida: "Artículo 6, apartado 2, letra d)",
+        //     razonamiento: "El claim sobre el futuro descarbonizado de la empresa se respalda por una existencia documentada del Indicador de Intensidad de Carbono en el Informe de Gestión Integrado 2024. No obstante, la evidencia es insuficiente, ya que carece de un plan detallado y verificable por un tercero independiente, conforme exige la Directiva. Aunque utiliza datos actuales, la verificación por una unidad interna, aún supervisada, no cumple con la independencia requerida. Sin un plan claro y verificable, este claim infringe el artículo 6, apartado 2, letra d), lo que implica una conducta engañosa sobre el comportamiento ambiental futuro.",
+        //     consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+        //     overall: {
+        //       color: "Rojo",
+        //       recommendation: "Recomiendo implementar un plan detallado con verificación externa para mitigar el riesgo legal."
+        //     }
+        //   }
+        // }
       ]
     },
     {
@@ -317,42 +317,42 @@ export const CLAIM_CARD_DB = [
       title: "Inciativas de Repsol contra el Cambio Climático",
       text_summary: "El texto de Repsol aborda sus iniciativas en la lucha contra el cambio climático, incluyendo la descarbonización y la meta de cero emisiones para 2050.",
       claims: [
-        {
-          claim_id: 9,
-          claim: "El reto de descarbonizar la economía",
-          categories: [
-            "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
-          ],
-          relevant_laws: "Anexo I 4 ter",
-          evidence_needed: "Clarificación de los aspectos específicos de sus operaciones que participan en la descarbonización, junto con evaluaciones verificables que demuestren dicha acción.",
-          analysis: {
-            existence: {
-              "result": "Sí",
-              "explanation": "Repsol presentó un plan de transición energética detallado en 2024."
-            },
-            sufficiency: {
-              "result": "Insuficiente",
-              "explanation": "Falta evidencia de plan específico detallado metodológico para descarbonización de toda su economía como 'Reto' indicado."
-            },
-            actuality: {
-              "result": "Actual",
-              "explanation": "Es un informe del año 2024, cumpliendo con el límite temporal."
-            },
-            independence: {
-              "result": "Independiente",
-              "explanation": "Verificación externa por Deloitte de la estrategia en 2023 está mencionada."
-            }
-          },
-          legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d)",
-            razonamiento: "El análisis de evidencia indica que Repsol presentó un plan de transición energética en 2024, pero carece de un plan metodológico específico y detalles fundamentales para la descarbonización completa. Aunque el plan es actual y cuenta con verificación independiente por Deloitte, no cumple con los requisitos del Artículo 6, apartado 2, letra d) de presentar compromisos claros, metas verificables y un plan detallado, lo que viola las normativas sobre afirmaciones medioambientales futuras. Por lo tanto, la afirmación de descarbonización total es ilegal.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
-            overall: {
-              color: "Rojo",
-              recommendation: "El reclamante debe elaborar un plan verificable conforme a los requisitos legales, detallando compromisos y validándolo externamente, para evitar sanciones."
-            }
-          }
-        },
+        // {
+        //   claim_id: 9,
+        //   claim: "El reto de descarbonizar la economía",
+        //   categories: [
+        //     "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
+        //   ],
+        //   relevant_laws: "Anexo I 4 ter",
+        //   evidence_needed: "Clarificación de los aspectos específicos de sus operaciones que participan en la descarbonización, junto con evaluaciones verificables que demuestren dicha acción.",
+        //   analysis: {
+        //     existence: {
+        //       "result": "Sí",
+        //       "explanation": "Repsol presentó un plan de transición energética detallado en 2024."
+        //     },
+        //     sufficiency: {
+        //       "result": "Insuficiente",
+        //       "explanation": "Falta evidencia de plan específico detallado metodológico para descarbonización de toda su economía como 'Reto' indicado."
+        //     },
+        //     actuality: {
+        //       "result": "Actual",
+        //       "explanation": "Es un informe del año 2024, cumpliendo con el límite temporal."
+        //     },
+        //     independence: {
+        //       "result": "Independiente",
+        //       "explanation": "Verificación externa por Deloitte de la estrategia en 2023 está mencionada."
+        //     }
+        //   },
+        //   legal_reasoning: {
+        //     norma_infringida: "Artículo 6, apartado 2, letra d)",
+        //     razonamiento: "El análisis de evidencia indica que Repsol presentó un plan de transición energética en 2024, pero carece de un plan metodológico específico y detalles fundamentales para la descarbonización completa. Aunque el plan es actual y cuenta con verificación independiente por Deloitte, no cumple con los requisitos del Artículo 6, apartado 2, letra d) de presentar compromisos claros, metas verificables y un plan detallado, lo que viola las normativas sobre afirmaciones medioambientales futuras. Por lo tanto, la afirmación de descarbonización total es ilegal.",
+        //     consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+        //     overall: {
+        //       color: "Rojo",
+        //       recommendation: "El reclamante debe elaborar un plan verificable conforme a los requisitos legales, detallando compromisos y validándolo externamente, para evitar sanciones."
+        //     }
+        //   }
+        // },
         {
           claim_id: 10,
           claim: "Repsol fue la primera compañía de su sector en fijarse el objetivo de ser cero emisiones netas para 2050",
@@ -632,7 +632,7 @@ export const CLAIM_CARD_DB = [
         },
         {
           claim_id: 18,
-          claim: "Logrando reducir hasta un 90% las emisiones de CO₂.",
+          claim: "Elaboramos biocombustibles a partir de materias primas como aceites de cocina usados y residuos forestales, logrando reducir hasta un 90% las emisiones de CO₂",
           categories: [
             "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
           ],
@@ -702,42 +702,42 @@ export const CLAIM_CARD_DB = [
             }
           }
         },
-        {
-          claim_id: 20,
-          claim: "Con proyectos como Solar360 y Solmatch, promovemos la generación de energía solar en hogares y comunidades urbanas.",
-          categories: [
-            "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
-          ],
-          relevant_laws: "Anexo I 4 ter",
-          evidence_needed: "Información detallada sobre el alcance y los resultados de estos proyectos, con métricas claras del impacto.",
-          analysis: {
-            existence: {
-              "result": "No",
-              "explanation": "Ninguno de los documentos presentados por la empresa menciona explícitamente los proyectos Solar360 y Solmatch."
-            },
-            sufficiency: {
-              "result": "Insuficiente",
-              "explanation": "La evidencia disponible no menciona ni verifica los proyectos Solar360 y Solmatch ni sus impactos en generación solar."
-            },
-            actuality: {
-              "result": "Sin fecha",
-              "explanation": "Dado que no existe evidencia específica sobre los proyectos mencionados, no se puede determinar la fecha de dicha evidencia."
-            },
-            independence: {
-              "result": "No Aplica",
-              "explanation": "La no existencia de evidencia sobre los proyectos Solar360 y Solmatch hace irrelevante la verificación externa en este análisis."
-            }
-          },
-          legal_reasoning: {
-            norma_infringida: "Art. 4 bis Anexo I",
-            razonamiento: "La empresa ha realizado una afirmación medioambiental genérica sobre los proyectos Solar360 y Solmatch, sin presentar evidencia de un comportamiento ambiental excelente reconocido. De acuerdo con el Artículo 4 bis del Anexo I de la Directiva 2005/29/CE, es obligatorio demostrar tal comportamiento relevante para validar estas afirmaciones. La inexistencia de documento alguno que respalde estos proyectos infringe esta disposición, constituyendo una práctica comercial potencialmente engañosa.",
-            consecuencia: "lista negra / práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
-            overall: {
-              color: "Rojo",
-              recommendation: "Recomendamos retirar el claim hasta presentar evidencia concreta, adecuada y verificable."
-            }
-          }
-        }
+        // {
+        //   claim_id: 20,
+        //   claim: "Con proyectos como Solar360 y Solmatch, promovemos la generación de energía solar en hogares y comunidades urbanas.",
+        //   categories: [
+        //     "AFIRMACIÓN SOBRE TOTALIDAD DEL PRODUCTO O EMPRESA"
+        //   ],
+        //   relevant_laws: "Anexo I 4 ter",
+        //   evidence_needed: "Información detallada sobre el alcance y los resultados de estos proyectos, con métricas claras del impacto.",
+        //   analysis: {
+        //     existence: {
+        //       "result": "No",
+        //       "explanation": "Ninguno de los documentos presentados por la empresa menciona explícitamente los proyectos Solar360 y Solmatch."
+        //     },
+        //     sufficiency: {
+        //       "result": "Insuficiente",
+        //       "explanation": "La evidencia disponible no menciona ni verifica los proyectos Solar360 y Solmatch ni sus impactos en generación solar."
+        //     },
+        //     actuality: {
+        //       "result": "Sin fecha",
+        //       "explanation": "Dado que no existe evidencia específica sobre los proyectos mencionados, no se puede determinar la fecha de dicha evidencia."
+        //     },
+        //     independence: {
+        //       "result": "No Aplica",
+        //       "explanation": "La no existencia de evidencia sobre los proyectos Solar360 y Solmatch hace irrelevante la verificación externa en este análisis."
+        //     }
+        //   },
+        //   legal_reasoning: {
+        //     norma_infringida: "Art. 4 bis Anexo I",
+        //     razonamiento: "La empresa ha realizado una afirmación medioambiental genérica sobre los proyectos Solar360 y Solmatch, sin presentar evidencia de un comportamiento ambiental excelente reconocido. De acuerdo con el Artículo 4 bis del Anexo I de la Directiva 2005/29/CE, es obligatorio demostrar tal comportamiento relevante para validar estas afirmaciones. La inexistencia de documento alguno que respalde estos proyectos infringe esta disposición, constituyendo una práctica comercial potencialmente engañosa.",
+        //     consecuencia: "lista negra / práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+        //     overall: {
+        //       color: "Rojo",
+        //       recommendation: "Recomendamos retirar el claim hasta presentar evidencia concreta, adecuada y verificable."
+        //     }
+        //   }
+        // }
       ]
     },
     {
@@ -918,12 +918,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Art. 4 quater del Anexo I",
-            razonamiento: "La publicidad de Diésel NEXA sugiere que el producto tiene cero emisiones netas. Sin embargo, la falta de evidencia específica y suficiente sobre estas afirmaciones, junto con la ausencia de fechas y verificación externa, implica que se basa en compensaciones no verificadas. Según el artículo 4 quater del Anexo I, está prohibido hacer tales afirmaciones sin impacto real en el ciclo de vida del producto. Por lo tanto, la práctica es engañosa bajo la normativa de la Directiva 2025/29/CE.",
-            consecuencia: "lista negra / práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            norma_infringida: "Ninguna norma infringida",
+            razonamiento: "El claim revisado afirma la totalidad del producto como elaborado con combustible HVO 100% renovable. El análisis demuestra existencia, suficiencia y actualidad de pruebas que respaldan dicha afirmación, cumpliendo la norma EN 15940. Además, la categoría no exige verificación externa, haciendo que el riesgo de greenwashing sea bajo. Por tanto, no hay infracción del Artículo 4 ter del Anexo I, que demanda pruebas de cobertura plena sobre toda la afirmación.",
+            consecuencia: "No hay infracción; no se requiere sanción",
             overall: {
-              color: "Rojo",
-              recommendation: "Se debe cesar el uso del claim inmediatamente y evitar afirmaciones no verificadas."
+              color: "Verde",
+              recommendation: "El claim es válido y no infringe ninguna norma, pero se recomienda mantener la evidencia actualizada y verificar periódicamente el cumplimiento de las afirmaciones."
             }
           }
         }
