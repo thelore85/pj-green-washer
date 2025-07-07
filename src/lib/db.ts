@@ -41,42 +41,42 @@ export const CLAIM_CARD_DB = [
             }
           }
         },
-        {
-          claim_id: 2,
-          claim: "Creemos firmemente que las grandes empresas deben integrar una política de cero emisiones netas en sus estrategias de negocio.",
-          categories: [
-            "META FUTURA SIN PLAN VERIFICABLE"
-          ],
-          relevant_laws: "Artículo 6.2.d",
-          evidence_needed: "Un plan de ejecución detallado y verificable que incluya metas mensurables y recursos asignados, verificado por un tercero independiente.",
-          analysis: {
-            existence: {
-              "result": "Sí",
-              "explanation": "Se presenta documentación extensa sobre las políticas de sostenibilidad y estrategias de transición energética de Repsol, incluyendo informes y planes relevantes."
-            },
-            sufficiency: {
-              "result": "Insuficiente",
-              "explanation": "Se detalla la política de descarbonización y objetivos para 2050, pero no se especifica un plan verificable para 2030 con metas claras."
-            },
-            actuality: {
-              "result": "Actual",
-              "explanation": "Los documentos y evidencias mencionadas están fechados en 2024, conformidad con el análisis de datos hasta ese año."
-            },
-            independence: {
-              "result": "Independiente",
-              "explanation": "La evaluación externa por Deloitte ayuda a verificar el seguimiento de las estrategias de sostenibilidad, aunque no se detalla un proceso completo de auditoría."
-            }
-          },
-          legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d)",
-            razonamiento: "El claim de Repsol, relacionado con su política de descarbonización, presenta documentación general sobre sus objetivos a largo plazo para 2050. Sin embargo, carece de un plan verificable a corto plazo para 2030 con compromisos específicos y objetivos medibles. Según el Art. 6, apartado 2, letra d) de la Directiva, es obligatorio proporcionar un plan de ejecución realista y detallado. La falta de esto convierte el claim en una práctica comercial engañosa por omisión, ya que puede llevar a los consumidores a expectativas infundadas sobre el comportamiento futuro de la empresa.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
-            overall: {
-              color: "Rojo",
-              recommendation: "Repsol debe desarrollar un plan detallado para 2030 con metas verificables para corregir la deficiencia y evitar sanciones severas."
-            }
-          }
-        },
+        // {
+        //   claim_id: 2,
+        //   claim: "Creemos firmemente que las grandes empresas deben integrar una política de cero emisiones netas en sus estrategias de negocio.",
+        //   categories: [
+        //     "META FUTURA SIN PLAN VERIFICABLE"
+        //   ],
+        //   relevant_laws: "Artículo 6.2.d",
+        //   evidence_needed: "Un plan de ejecución detallado y verificable que incluya metas mensurables y recursos asignados, verificado por un tercero independiente.",
+        //   analysis: {
+        //     existence: {
+        //       "result": "Sí",
+        //       "explanation": "Se presenta documentación extensa sobre las políticas de sostenibilidad y estrategias de transición energética de Repsol, incluyendo informes y planes relevantes."
+        //     },
+        //     sufficiency: {
+        //       "result": "Insuficiente",
+        //       "explanation": "Se detalla la política de descarbonización y objetivos para 2050, pero no se especifica un plan verificable para 2030 con metas claras."
+        //     },
+        //     actuality: {
+        //       "result": "Actual",
+        //       "explanation": "Los documentos y evidencias mencionadas están fechados en 2024, conformidad con el análisis de datos hasta ese año."
+        //     },
+        //     independence: {
+        //       "result": "Independiente",
+        //       "explanation": "La evaluación externa por Deloitte ayuda a verificar el seguimiento de las estrategias de sostenibilidad, aunque no se detalla un proceso completo de auditoría."
+        //     }
+        //   },
+        //   legal_reasoning: {
+        //     norma_infringida: "Artículo 6, apartado 2, letra d)",
+        //     razonamiento: "El claim de Repsol, relacionado con su política de descarbonización, presenta documentación general sobre sus objetivos a largo plazo para 2050. Sin embargo, carece de un plan verificable a corto plazo para 2030 con compromisos específicos y objetivos medibles. Según el Art. 6, apartado 2, letra d) de la Directiva, es obligatorio proporcionar un plan de ejecución realista y detallado. La falta de esto convierte el claim en una práctica comercial engañosa por omisión, ya que puede llevar a los consumidores a expectativas infundadas sobre el comportamiento futuro de la empresa.",
+        //     consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+        //     overall: {
+        //       color: "Rojo",
+        //       recommendation: "Repsol debe desarrollar un plan detallado para 2030 con metas verificables para corregir la deficiencia y evitar sanciones severas."
+        //     }
+        //   }
+        // },
         {
           claim_id: 3,
           claim: "Para favorecer el paso hacia una economía baja en carbono, hemos adaptado nuestras estrategias y objetivos iniciales a unos mucho más exigentes.",
@@ -148,12 +148,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Artículo 6 § 2 d)",
-            razonamiento: "El análisis indica que existe documentación sobre acciones y compromisos relacionados con el claim, pero es insuficiente en cuanto a la presentación de metas temporales detalladas, recursos asignados y verificaciones externas periódicas. La falta de un plan detallado y de verificación externa independiente contraviene lo estipulado en el Artículo 6 § 2 d), que exige criterios claros y verificables, así como supervisión externa. Por lo tanto, la afirmación carece de los requisitos necesarios y es engañosa.",
+            norma_infringida: "Ninguna norma infringida",
+            razonamiento: "La empresa Repsol ha realizado afirmaciones sobre su compromiso con la descarbonización hacia 2050, sustentadas por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
             consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
             overall: {
-              color: "Rojo",
-              recommendation: "Revisar el claim y elaborar un plan que incluya metas detalladas y verificación externa para evitar sanciones legales."
+              color: "Verde",
+              recommendation: "Mantener la estrategia actual y asegurar la verificación externa periódica para cumplir con los requisitos legales."
             }
           }
         },
@@ -228,12 +228,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d)",
-            razonamiento: "Repsol hace una afirmación sobre cero emisiones netas para 2050. Aunque exista documentación reciente, es insuficiente ya que no presenta un plan detallado y verificable. Además, la normativa exige metas claras y recursos asignados, verificables por un tercero. Sin este cumplimiento, la comunicación incita a error por falta de plan detallado.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            norma_infringida: "Ninguna norma infringida",
+            razonamiento: "La empresa Repsol ha realizado afirmaciones sobre su compromiso con la descarbonización hacia 2050, sustentadas por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
+            consecuencia: "No presenta riesgos",
             overall: {
-              color: "Rojo",
-              recommendation: "Revisar y presentar un plan detallado y verificable para evitar sanciones."
+              color: "Verde",
+              recommendation: "Mantener la estrategia actual y asegurar la verificación externa periódica para cumplir con los requisitos legales."
             }
           }
         },
@@ -264,12 +264,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d",
-            razonamiento: "La afirmación medioambiental se basa en metas de reducción de emisiones para 2025, 2030 y 2040, pero falta un plan de ejecución detallado y una verificación por un tercero independiente, lo que incumple el Artículo 6, apartado 2, letra d. Esta norma establece que tales afirmaciones deben estar respaldadas por compromisos claros y un plan verificado externamente. La insuficiencia en la prueba del plan y verificación externa indica que la afirmación es engañosa.",
-            consecuencia: "omisión engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            norma_infringida: "Ninguna norma infringida",
+            razonamiento: "La empresa Repsol ha realizado afirmaciones sobre su compromiso con la descarbonización hacia 2050, sustentadas por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
+            consecuencia: "La afirmación esta fuera de riesgos",
             overall: {
-              color: "Rojo",
-              recommendation: "Evitar afirmaciones sin planes detallados y verificación externa."
+              color: "Verde",
+              recommendation: "Mantener el plan de metas intermedias y asegurar la verificación externa periódica para cumplir con los requisitos legales."
             }
           }
         },
@@ -380,12 +380,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d) de la Directiva 2005/29/CE",
-            razonamiento: "El análisis muestra que Repsol afirma un objetivo de cero emisiones netas para 2050, pero las pruebas son insuficientes. La Directiva 2005/29/CE exige que tales afirmaciones estén respaldadas por un plan detallado y verificado periódicamente por un tercero independiente. El incumplimiento de estos requisitos indica que la afirmación podría inducir a error a los consumidores, ya que carece de la claridad y verificación exigida por la norma para metas medioambientales futuras.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            norma_infringida: "No se ha infringido ninguna norma",
+            razonamiento: "Repsol ha realizado afirmaciones sobre su compromiso con la descarbonización hacia 2050, sustentadas por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
+            consecuencia: "La afirmación esta fuera de riesgos",
             overall: {
-              color: "Rojo",
-              recommendation: "Adoptar un plan detallado con verificación externa para cumplir con la normativa."
+              color: "Verde",
+              recommendation: "Mantener el plan detallado y verificado para cumplir con los requisitos legales y evitar sanciones."
             }
           }
         },
@@ -416,12 +416,12 @@ export const CLAIM_CARD_DB = [
             }
           },
           legal_reasoning: {
-            norma_infringida: "Artículo 6, apartado 2, letra d)",
-            razonamiento: "La empresa ha realizado una afirmación sobre su comportamiento ambiental futuro en cuanto a la descarbonización y la reducción de emisiones, pero ha fallado en proporcionar una verificación externa periódica que respalde su hoja de ruta de acuerdo con las metas establecidas. Este hecho podría inducir a los consumidores a creer en compromisos futuros sin la debida prueba de cumplimiento sostenible. Según el artículo 6, apartado 2, letra d), es obligatorio contar con una verificación periódica independiente, lo que no se cumple en este caso.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            norma_infringida: "No se ha infringido ninguna norma",
+            razonamiento: "La empresa ha realizado una afirmación sobre su comportamiento ambiental futuro en cuanto a la descarbonización y la reducción de emisiones, sustentada por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
+            consecuencia: "La afirmación está respaldada y no presenta riesgos",
             overall: {
-              color: "Naranja",
-              recommendation: "Mejorar la verificación externa periódica para cumplir totalmente con los requisitos legales y mitigar riesgos de sanción."
+              color: "Verde",
+              recommendation: "Mantener la hoja de ruta actual y asegurar la verificación externa periódica para cumplir con los requisitos legales."
             }
           }
         }
@@ -497,11 +497,11 @@ export const CLAIM_CARD_DB = [
           },
           legal_reasoning: {
             norma_infringida: "Artículo 6, apartado 2, letra d)",
-            razonamiento: "El claim propone una afirmación sobre descarbonización futura, respaldada por documentación del Informe de Gestión Integrado 2024. La existencia y actualidad están verificadas, al contener información dentro del límite de tres años y con certificación independiente conforme a ISO 14064-1. Sin embargo, la evidencia es insuficiente porque carece de un plan detallado con metas mensurables, recursos asignados y verificación externa periódica, lo que infringe el artículo 6, apartado 2, letra d) de la Directiva 2005/29/CE.",
+            razonamiento: "El claim propone una afirmación sobre descarbonización futura, respaldada por documentación del Informe de Gestión Integrado 2024. La existencia y actualidad están verificadas, al contener información dentro del límite de tres años y con certificación independiente conforme a ISO 14064-1. Sin embargo, al considerarse como afirmación genérica, esta requiere un comportamiento medioambiental excelente reconocido.",
             consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
             overall: {
-              color: "Rojo",
-              recommendation: "Urgente revisión de la planificación para cumplir requisitos de metas mensurables y verificación externa periódica."
+              color: "Naranja",
+              recommendation: "Se recomienda a Repsol asefurar un comportamiento medioambiental excelente reconocido, que cumpla con el Reglamento (CE) n.o 66/2010 del Parlamento Europeo y del Consejo o con los sistemas nacionales oregionales de etiquetado ecológico EN ISO 14024 de tipo I reconocidos oficialmente por los Estados miembros"
             }
           }
         },
@@ -582,42 +582,6 @@ export const CLAIM_CARD_DB = [
             overall: {
               color: "Verde",
               recommendation: "Recomendación legal: Mantener siempre con cobertura plena y evidencias actualizadas."
-            }
-          }
-        },
-        {
-          claim_id: 16,
-          claim: "Ahorra hasta un 70 % al año en tu factura de luz",
-          categories: [
-            "META FUTURA SIN PLAN VERIFICABLE"
-          ],
-          relevant_laws: "Artículo 6, apartado 2, letra d)",
-          evidence_needed: "Plan de ejecución detallado y verificable por un tercero independiente que especifique cómo se logrará el ahorro del 70 %.",
-          analysis: {
-            existence: {
-              "result": "Sí",
-              "explanation": "La empresa presenta diversos informes y tablas financieras, pero nada específico refuta el claim."
-            },
-            sufficiency: {
-              "result": "Insuficiente",
-              "explanation": "El claim requiere datos específicos para comprobar el ahorro del 70%, ausentes en la evidencia."
-            },
-            actuality: {
-              "result": "Actual",
-              "explanation": "La documentación y los informes son de 2024, dentro de los tres años de actualidad."
-            },
-            independence: {
-              "result": "No Aplica",
-              "explanation": "La categoría no exige verificación externa del claim específico de ahorro energético."
-            }
-          },
-          legal_reasoning: {
-            norma_infringida: "Art. 7 § 4",
-            razonamiento: "El claim de ahorro energético del 70% presentado por la empresa no está respaldado por datos específicos según el análisis de suficiencia, lo que indica un incumplimiento de la obligación de proporcionar información veraz y fundamentada. La falta de datos específicos que verifiquen el porcentaje anunciado puede inducir a error al consumidor sobre los beneficios reales del producto, lo que configura una práctica engañosa conforme al Art. 7 § 4. La insuficiencia en la evidencia, a pesar de la documentación actual, refuerza esta conclusión de incumplimiento.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
-            overall: {
-              color: "Rojo",
-              recommendation: "Recomiendo revisar y completar la evidencia que respalda los claims para evitar sanciones graves y riesgos reputacionales."
             }
           }
         }
