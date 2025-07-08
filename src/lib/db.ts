@@ -106,7 +106,7 @@ export const CLAIM_CARD_DB = [
           legal_reasoning: {
             norma_infringida: "Ninguna norma infringida",
             razonamiento: "El análisis revela que existe documentación actualizada sobre las estrategias de reducción de emisiones. Consta de objetivos claros, mensurables y acotados en el tiempo, así como de la asignación de recursos y la verificación externa periódica. Por tanto, cumple el Artículo 6, apartado 2, letra d), que exige primar la veracidad y credibilidad de afirmaciones medioambientales futuras.",
-            consecuencia: "omisión engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            consecuencia: "Debido a la suficiencia de la evidencia, no se identifica infracción en las afirmaciones de la empresa.",
             overall: {
               color: "Verde",
               recommendation: "Mantener la estrategia actual y asegurar la verificación externa periódica para cumplir con los requisitos legales."
@@ -150,7 +150,7 @@ export const CLAIM_CARD_DB = [
           legal_reasoning: {
             norma_infringida: "Ninguna norma infringida",
             razonamiento: "La empresa Repsol ha realizado afirmaciones sobre su compromiso con la descarbonización hacia 2050, sustentadas por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            consecuencia: "No se identifica infracción",
             overall: {
               color: "Verde",
               recommendation: "Mantener la estrategia actual y asegurar la verificación externa periódica para cumplir con los requisitos legales."
@@ -462,7 +462,7 @@ export const CLAIM_CARD_DB = [
           legal_reasoning: {
             norma_infringida: "Art. 6 § 2 d)",
             razonamiento: "La empresa Repsol ha realizado afirmaciones sobre su compromiso con la descarbonización hacia 2050, sustentadas por documentación detallada que incluye metas, planes y recursos asignados, verificados por una entidad independiente. Dado que estos planes son actuales y están fundamentados en compromisos verificables y medibles, la evidencia es suficiente bajo el Artículo 6, apartado 2, letra d) de la Directiva reformada, garantizando que no existe una omisión engañosa en este contexto. Por consiguiente, no se identifica infracción en las afirmaciones de la empresa.",
-            consecuencia: "práctica engañosa; sanción máx. 4 % facturación UE o 2 M €",
+            consecuencia: "No presenta riesgos",
             overall: {
               color: "Verde",
               recommendation: "Continuar con la estrategia actual y mantener verificación externa periódica."
