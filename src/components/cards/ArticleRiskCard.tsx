@@ -12,7 +12,7 @@ export default function ArticleRiskCard({ high, middle, low }: ArticleRiskCardPr
     <>
       <h2 className="mx-auto mb-3 w-full max-w-[800px] text-3xl font-bold">Análisis de afirmaciones</h2>
       <div className="bg-card mx-auto mb-10 w-full max-w-[800px] rounded-2xl p-4 text-sm shadow-md transition-transform">
-        <h3 className="mb-2 border-b-1 border-gray-200 text-lg font-bold">Nivel de riesgo de la afirmaciones del artículo </h3>
+        <h3 className="mb-2 border-b-1 border-gray-200 text-lg font-bold">Nivel de riesgo de las afirmaciones para la página analizada: </h3>
 
         <div className="text-md flex justify-between p-6 font-bold tracking-tight">
           {/* Risk lable  */}
